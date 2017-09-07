@@ -1,0 +1,192 @@
+<div class="header-container header-style-2">
+    <div class="header">
+    	<?php echo $this->getChildHtml('customer_form_mini_login'); ?>
+		
+    	<div class="container">
+    			<div class="headertop-mobile">
+    				<div class="mobile-menu">							
+						<?php echo $this->getChildHtml('catalog.topmobinav'); ?>									
+					</div>
+					<div class="header-right">
+						<div class="header-right-inner">
+
+							<div class="toplink-w">
+								 <div class="dropdown-block block-myacount">
+									<div class="account-links">
+										<div class="dropdown-toggle">
+											<a class="myaccount-link" href="<?php echo $this->getUrl('customer/account')?>" title="<?php echo $this->__('My Account');?>"><?php echo $this->__('My Account');?></a>
+										</div>
+
+										<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+									</div>
+									
+								</div>
+								<div class="minicart-header">
+					                <?php echo $this->getChildHtml('mini-cartpro'); ?>
+				                </div>								
+								<div class="dropdown-block block-base">
+									<?php echo $this->getChildHtml('topLinks') ?>
+								</div>
+								<div class="dropdown-block block-login">
+									<?php if(!$this->helper('customer')->isLoggedIn()){?>
+										<a class="cus-btn login-popup" data-toggle="modal" data-target="#modal-login" title="<?php echo $this->__('Login')?>">
+											<i class="fa fa-lock"></i>
+											<?php echo $this->__('Login')?>
+										</a>
+										<a class="cus-btn login-moile" href="<?php echo $this->getUrl('customer/account/login')?>" title="<?php echo $this->__('Login')?>">
+											<i class="fa fa-lock"></i>
+											<?php echo $this->__('Login')?>
+										</a>
+									<?php } else{?>
+										<a class="cus-btn" href="<?php echo $this->getUrl('customer/account/logout')?>" title="<?php echo $this->__('Logout');?>">
+											<i class="fa fa-unlock-alt"></i>
+											<?php echo $this->__('Logout');?>
+										</a>
+									<?php } ?>
+								</div>
+							</div>
+							
+								
+						</div>					
+					</div>
+    			</div>
+
+			</div>	
+
+				<div class="inner custom-header">
+
+					<div class="logo-wrapper">
+						<h1 class="logo">
+							<?php 
+								$logoSmall_src =   Mage::getStoreConfig('design/header/logo_src_small');
+								$src = $this->getSkinUrl().$logoSmall_src;
+							?>
+							
+							<a class="logo-small" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
+								<img src="<?php echo $src; ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+							</a>
+						</h1>
+					</div> 
+                    <div class="top-strip">
+	                    <div class="container">
+		                    <div class="col-md-12">
+		                    	<div class="row">
+		                       		<div class="col-md-4 col-sm-12 my-phone">
+		                       		<span class="phone-icon">9836892283</span>
+		                       		</div>
+				                        <div class="col-md-8  col-sm-12">
+
+											 <div class="dropdown-block block-base">
+												<?php echo $this->getChildHtml('topLinks') ?>
+											</div>
+
+											<div class="dropdown-block block-login">
+												<?php if(!$this->helper('customer')->isLoggedIn()){?>
+													<a class="cus-btn login-popup" data-toggle="modal" data-target="#modal-login" title="<?php echo $this->__('Login')?>">
+														<i class="fa fa-lock"></i>
+														<?php echo $this->__('Login')?>
+													</a>
+													<a class="cus-btn login-moile" href="<?php echo $this->getUrl('customer/account/login')?>" title="<?php echo $this->__('Login')?>">
+														<i class="fa fa-lock"></i>
+														<?php echo $this->__('Login')?>
+													</a>
+												<?php } else{?>
+													<a class="cus-btn" href="<?php echo $this->getUrl('customer/account/logout')?>" title="<?php echo $this->__('Logout');?>">
+														<i class="fa fa-unlock-alt"></i>
+														<?php echo $this->__('Logout');?>
+													</a>
+												<?php } ?>
+											</div>
+
+											<div class="minicart-header">
+								                <?php echo $this->getChildHtml('mini-cartpro'); ?>
+							                </div>
+
+							                <div class="dropdown-block block-myacount">
+												<div class="account-links">
+													<div class="dropdown-toggle">
+														<a class="myaccount-link" href="<?php echo $this->getUrl('customer/account')?>" title="<?php echo $this->__('My Account');?>"><?php echo $this->__('My Account');?></a>
+													</div>
+
+													<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+												</div>
+												
+				                        </div>											
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>  
+
+
+                    <div class="container">
+	                    <div class="top-header">   
+ 
+	                            <div class="row">
+
+								    <div class="col-md-4">&nbsp;</div>
+								    <div class="col-md-4 col-sm-12">
+										<h1 class="logo">
+											<strong><?php echo $this->getLogoAlt() ?></strong>
+											<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo-normal">
+												<img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+											</a>
+									
+										</h1>				    	
+
+								    </div>
+							        <div class="col-md-4 col-sm-12">   
+										<?php echo $this->getChildHtml('topSearch'); ?>
+								    </div>
+							    </div>
+
+								<div class="navigation-action">
+									<div class="menu-larger">
+										<div class="row">
+										<?php if( $var_yttheme->getParam('menustyle')=='mega' ){ ?>
+											<div class="col-lg-12 col-md-12">
+												<?php echo $this->getChildHtml('megaMenu'); ?>
+											</div>
+										<?php } else { ?>
+											<div class="col-lg-12 col-md-12">
+												<?php echo $this->getChildHtml('topMenu'); ?>
+											</div>
+										<?php } ?>
+										</div>
+									</div>
+								</div>
+					    </div>
+				    </div>					
+
+				</div>
+			
+		
+
+
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+</div>
+
+
+<?php if($config->getGeneral('menu_ontop') == 1){ ?>
+	<script>
+		jQuery(document).ready(function($){ 
+			$window = $(window);
+			if($('.header').length){
+				menu_offset_top = $('.header').height();
+				function processScroll() {
+					var scrollTop = $window.scrollTop();
+					if ( scrollTop >= 80) {
+						$('.header').addClass('menu-on-top');
+					} else if (scrollTop <= menu_offset_top) {
+						$('.header').removeClass('menu-on-top');
+					}
+				}
+				processScroll();
+				$window.scroll(function(){
+					processScroll();
+				});
+			}
+		});
+	</script>
+<?php } ?>

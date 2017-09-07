@@ -1,0 +1,220 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Basic Products - Version 1.0.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+$list = $this->_getProducts();
+$count_item = count($list);
+$helper = Mage::helper('basicproducts/data'); 
+
+$screen1 = $this->_getConfig('nb_column1');
+$screen2 = $this->_getConfig('nb_column2');
+$screen3 = $this->_getConfig('nb_column3');
+$screen4 = $this->_getConfig('nb_column4');
+$screen5 = $this->_getConfig('nb_column5');
+
+?>
+
+	<div class="product-home-listing">
+		<?php if ($this->_getConfig('basicproducts_title_text')) { ?>
+			<div class="title-home">
+				<h2><?php echo $this->_getConfig('basicproducts_title_text', 'Basic Products Title'); ?></h2>
+			</div>
+		<?php } ?>
+
+		<div class="product-slider-content">
+			<?php if (!empty($list)) { ?>
+				<?php if ($this->_getConfig('pretext') != null) { ?>
+					<div class="bs-pretext">
+						<?php echo $this->_getConfig('pretext'); ?>
+					</div>
+				<?php } ?>
+
+				<div class="basic-products-slider">
+					<!-- Begin bs-items     -->
+						<?php 
+							$j = 0;
+							$count = 0;
+							$nb_rows = 2;
+							foreach ($list as $_product) { 
+								$count ++;
+								$j++;
+							?>
+							<!-- Begin bs-item-cf -->
+							<?php if ($count % $nb_rows == 1 || $nb_rows == 1) { ?>
+							<div class="item">
+							<?php } ?>
+								
+							<!-- Begin bs-item-inner -->
+							<div class="bs-item-inner">
+
+								<?php if ($_product->_image) { ?>
+									<div class="image-box">
+										<a href="<?php echo $_product->link ?>"
+										   title="<?php echo $_product->title; ?>"
+											<?php echo $helper->parseTarget($this->_getConfig('product_links_target')); ?>
+											>
+											<img src="<?php echo $_product->_image; ?>"
+												 title="<?php echo $_product->title; ?>"
+												 alt="<?php echo $_product->title; ?>"
+												>
+										</a>
+									</div>
+								<?php } ?>
+
+								<!-- Begin bs-content -->
+								<div class="info-product-box">
+
+									<?php if ((int)$this->_getConfig('product_title_display', 1)) { ?>
+										<div class="bs-title">
+											<a href="<?php echo $_product->link; ?>" title="<?php echo $_product->title; ?>"
+												<?php echo $helper->parseTarget($this->_getConfig('product_links_target')); ?>
+												>
+												<?php echo $helper->truncate($_product->title, $this->_getConfig('product_title_maxlength')); ?>
+											</a>
+										</div>
+									<?php } ?>
+
+									<?php if ((int)$this->_getConfig('product_description_display', 1) && $helper->_trimEncode($_product->_description) != '') { ?>
+										<div class="bs-description">
+											<?php echo $_product->_description; ?>
+										</div>
+									<?php } ?>
+
+									<?php if ($this->_getConfig('cat_title_display') == 1) { ?>
+										<div class="bs-category">
+											<a href="<?php echo $_product->catlink; ?>"
+											   title="<?php echo $_product->category_title; ?>"
+												<?php echo $helper->parseTarget($this->_getConfig('product_links_target')); ?>
+												>
+												<?php echo 'Category:&nbsp' . $helper->truncate($_product->category_title, $this->_getConfig('category_title_max_characs', 25)); ?>
+											</a>
+										</div>
+									<?php } ?>
+
+									<?php if ($this->_getConfig('item_date_display') == 1) { ?>
+										<div class="bs-date">
+											<?php echo $_product->created_at; ?>
+										</div>
+									<?php } ?>
+
+									<?php if ($this->_getConfig('product_source') != 'media') { ?>
+
+										<?php if ((int)$this->_getConfig('product_price_display', 1)) { ?>
+											<?php echo $this->getPriceHtml($_product, true); ?>
+										<?php } ?>
+										
+										<?php if ((int)$this->_getConfig('product_reviews_count', 1)) { ?>
+												<?php
+												$this->addReviewSummaryTemplate('sm', 'sm/basicproducts/default_summary.phtml');
+												echo $this->getReviewsSummaryHtml($_product, 'sm', true);
+												?>
+										<?php } ?>
+
+										<div class="bottom-action">
+										
+											<?php if ((int)$this->_getConfig('product_addcart_display', 1)) { ?>
+												<?php if ($_product->isSaleable()) { ?>
+													<button data-toggle="tooltip" data-placement="top" class="btn-action btn-cart" type="button" title="<?php echo $this->__('Add to Cart') ?>" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')">
+														<span>
+															<span> <?php echo $this->__('Add to Cart') ?> </span>
+														</span>
+													</button>
+												<?php } else { ?>
+													<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+												<?php } ?>
+											<?php } ?>
+											<?php if ((int)$this->_getConfig('product_addcompare_display', 1)) { ?>
+												<?php if ($_compareUrl = $this->getAddToCompareUrl($_product)) { ?>
+													<a data-toggle="tooltip" data-placement="top" class="btn-action link-compare" title="<?php echo $this->__('Compare') ?>" href="<?php echo $_compareUrl ?>">
+														<span><?php echo $this->__('Compare') ?></span>
+													</a>
+												<?php } ?>
+											<?php } ?>
+											
+												
+											<?php if ((int)$this->_getConfig('product_addwishlist_display', 1)) { ?>
+												<?php if ($this->helper('wishlist')->isAllow()) { ?>
+													<a data-toggle="tooltip" data-placement="top" class="btn-action link-wishlist" title="<?php echo $this->__('Wishlist') ?>" href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>">
+														<span><?php echo $this->__('Wishlist') ?></span>
+													</a>
+												<?php } ?>
+											<?php } ?>
+											
+											
+										</div>
+
+									<?php } ?>
+
+
+
+									<?php if ($this->_getConfig('product_readmore_display') == 1) { ?>
+										<div class="bs-detail">
+											<a href="<?php echo $_product->link ?>"
+											   title="<?php echo $_product->title; ?>"
+												<?php echo $helper->parseTarget($this->_getConfig('product_links_target')); ?>
+												>
+												<?php echo $this->_getConfig('product_readmore_text', 'Details'); ?>
+											</a>
+										</div>
+									<?php } ?>
+								</div>
+								<!-- End bs-content -->
+							</div>
+							<!-- End bs-item-inner -->
+				
+							<?php if (($count % $nb_rows == 0 || $count == $count_item)) { ?>
+							</div><!-- End bs-item-cf -->
+							<?php } ?>
+						<?php } ?>
+
+					<!-- End bs-items -->
+				</div><!-- End Sm-basic-products -->
+				<?php if ($this->_getConfig('posttext') != null) { ?>
+					<div class="bs-posttext">
+						<?php echo $this->_getConfig('posttext'); ?>
+					</div>
+				<?php } ?>
+			<script>
+				jQuery(document).ready(function($) {
+					var bs_slider = $(".basic-products-slider");
+					bs_slider.owlCarousel({				
+						responsive:{
+							0:{
+								items:<?php echo $screen5;?>
+							},
+							480:{
+								items:<?php echo $screen4;?>
+							},
+							768:{
+								items:<?php echo $screen3;?>
+							},
+							992:{
+								items:<?php echo $screen2;?>
+							},
+							1200:{
+								items:<?php echo $screen1;?>
+							}
+						},
+						autoplay:true,
+						loop:true,
+						nav : true,
+						dots: false,
+						autoplaySpeed : 500,
+						navSpeed : 500,
+						dotsSpeed : 500,
+						autoplayHoverPause: true,
+						margin:30,
+					});	  
+				});	
+			</script>
+
+			<?php } else {
+				echo 'Has no content to show!';
+			}?>
+		</div>
+	</div>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>	
+    <modules>    
+        <Sm_Custom>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Catalog />
+            </depends>
+            <version>1.0.0</version>
+        </Sm_Custom>
+    </modules>
+</config>

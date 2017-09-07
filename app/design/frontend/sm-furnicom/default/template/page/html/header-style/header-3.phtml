@@ -1,0 +1,152 @@
+
+<div class="header-container header-style-3">
+	<div class="wow bounceInDown">
+    <div class="header">
+		<?php echo $this->getChildHtml('customer_form_mini_login'); ?>
+		<div class="header-bottom">
+			<div class="yt-menu">
+				<div class="mobile-menu">
+					
+					<?php echo $this->getChildHtml('catalog.topmobinav'); ?>
+		
+				</div>
+				<div class="menu-under">
+				<div class="container">	
+					<div class="inner">			
+						<div class="navigation-action">
+							<div class="menu-larger">
+								<div class="row">
+								<?php if( $var_yttheme->getParam('menustyle')=='mega' ){ ?>
+									<div class="col-lg-12 col-md-12">
+										<?php echo $this->getChildHtml('megaMenu'); ?>
+									</div>
+								<?php } else { ?>
+									<div class="col-lg-12 col-md-12">
+										<?php echo $this->getChildHtml('topMenu'); ?>
+									</div>
+								<?php } ?>
+								</div>
+							</div>
+							
+																					
+						</div>
+						<?php if($this->getLayout()->createBlock('cms/block')->setBlockId('header-socials')->toHtml()){ ?>
+						<div class="socials-header">
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-socials')->toHtml(); ?>
+						</div>
+						 <?php } ?>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 header-topright">
+						<div class="inner">
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-livechat')->toHtml(); ?>
+							<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-hotline')->toHtml(); ?>
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-6 col-sm-12 col-sx-12 header-topleft">
+						<div class="inner">
+							<?php echo $this->getChildHtml('currency') ?>
+							<?php echo $this->getChildHtml('store_language') ?>
+							
+							
+							<div class="dropdown-block block-myacount">
+								<div class="account-links">
+									<div class="dropdown-toggle">
+										<a class="myaccount-link" href="<?php echo $this->getUrl('customer/account')?>" title="<?php echo $this->__('My Account');?>"><?php echo $this->__('My Account');?></a>
+									</div>
+
+									<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('dropdown-my-account')->toHtml(); ?>
+								</div>
+								
+							</div>
+							<div class="dropdown-block block-base">
+								<?php echo $this->getChildHtml('topLinks') ?>
+							</div>
+							<div class="dropdown-block block-login">
+								<?php if(!$this->helper('customer')->isLoggedIn()){?>
+									<a class="cus-btn login-popup" data-toggle="modal" data-target="#modal-login" title="<?php echo $this->__('Login')?>">
+										<i class="fa fa-lock"></i>
+										<?php echo $this->__('Login')?>
+									</a>
+									<a class="cus-btn login-moile" href="<?php echo $this->getUrl('customer/account/login')?>" title="<?php echo $this->__('Login')?>">
+										<i class="fa fa-lock"></i>
+										<?php echo $this->__('Login')?>
+									</a>
+								<?php } else{?>
+									<a class="cus-btn" href="<?php echo $this->getUrl('customer/account/logout')?>" title="<?php echo $this->__('Logout');?>">
+										<i class="fa fa-unlock-alt"></i>
+										<?php echo $this->__('Logout');?>
+									</a>
+								<?php } ?>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="header-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-md-9 col-sm-9 header-middleleft">
+						<div class="logo-wrapper">
+							<h1 class="logo">
+								<strong><?php echo $this->getLogoAlt() ?></strong>
+								<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo">
+									<img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
+								</a>								
+							</h1>
+						</div>
+						<?php echo $this->getChildHtml('topSearch'); ?>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-3 header-middleright">													
+							<div class="minicart-header">
+								<?php echo $this->getChildHtml('mini-cartpro'); ?>
+							</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		
+
+        <?php echo $this->getChildHtml('topContainer'); ?>
+    </div>
+	</div>
+</div>
+
+
+
+<?php if($config->getGeneral('menu_ontop') == 1){ ?>
+	<script>
+		jQuery(document).ready(function($){ 
+			$window = $(window);
+			if($('.menu-under').length){
+				menu_offset_top = $('.header-top').offset().top;
+				function processScroll() {
+					var scrollTop = $window.scrollTop();
+					if ( scrollTop >= menu_offset_top) {
+						$('.menu-under').addClass('menu-on-top');
+					} else if (scrollTop <= menu_offset_top) {
+						$('.menu-under').removeClass('menu-on-top');
+					}
+				}
+				processScroll();
+				$window.scroll(function(){
+					processScroll();
+				});
+			}
+		});
+	</script>
+<?php } ?>

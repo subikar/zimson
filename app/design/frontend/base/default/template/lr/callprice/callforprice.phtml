@@ -1,0 +1,38 @@
+<?php $_product = $this->getProduct(); ?>
+
+<?php $loadformurl = $this->helper('lr_callprice')->loadformurl();?>
+<?php // Get customer Group
+$buttonTitle = 'Ask For The Best Offer';
+//echo $_product->getDisableAddtocart();
+?>
+<?php if ($_product->getDisableAddtocart() == 358) : ?>
+        <div class="add-to-cart col-sm-12 col-xs-12 addtocard-btn">
+            <button type="button" title="<?php echo $buttonTitle ?>" id="callforprice_btn_<?php echo $_product->getId()?>" onClick="if(productAddToCartForm.validator && productAddToCartForm.validator.validate()){loadCallForPriceForm('<?php echo $loadformurl.'?product='.$_product->getId() ?>')}" class="button btn-cart"><span><span><?php echo $buttonTitle ?></span></span></button>
+        </div> 
+    <?php $buttonTitle = $this->__('Buy Online'); ?>
+    <?php if($_product->isSaleable()): ?>
+        <div class="add-to-cart col-sm-4 col-xs-4 addtocard-btn">
+            <?php if(!$_product->isGrouped()): ?>
+               <input type="hidden" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+            <?php endif; ?>
+            <button type="button" title="<?php echo $buttonTitle ?>" class="buyonline" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
+            <?php echo $this->getChildHtml('', true, true) ?>
+        </div>
+    <?php endif; ?>
+
+
+<?php else: ?>
+    <?php $buttonTitle = $this->__('Buy Now'); ?>
+    <?php if($_product->isSaleable()): ?>
+        <div class="add-to-cart col-sm-12 col-xs-12 addtocard-btn">
+            <?php if(!$_product->isGrouped()): ?>
+               <input type="hidden" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+            <?php endif; ?>
+            <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
+            <?php echo $this->getChildHtml('', true, true) ?>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>
+
+
+

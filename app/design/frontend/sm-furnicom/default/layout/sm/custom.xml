@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+	<default>
+		<reference name="head">
+			<!-- <action method="addItem">
+				<type>skin_css</type><name>sm/custom/css/style.css</name>
+			</action>
+			<action method="addItem">
+				<type>skin_css</type><name>sm/custom/css/owl.carousel.css</name>
+			</action> -->
+			<!--action method="addItem">
+				<type>skin_js</type><name>sm/custom/js/jquery-2.1.3.min.js</name>
+			</action>
+			<action method="addItem">
+				<type>skin_js</type><name>sm/custom/js/jquery.noconflict.js</name>
+			</action-->
+			<action method="addItem">
+				<type>skin_js</type><name>sm/custom/js/owl.carousel.js</name>
+			</action>			
+		</reference>
+	</default>
+	<custom_index_index>
+		<reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>	
+		<reference name="content">
+			<block type="custom/list" name="custom.list.default" template="sm/custom/default.phtml">
+			</block>
+		</reference>
+	</custom_index_index>
+</layout>   
+	

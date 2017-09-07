@@ -1,0 +1,226 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Super Categories - Version 1.0.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+$image_base = Mage::getModel('catalog/product')->getSmallImageUrl();
+$helper = Mage::helper('supercategories/data');
+$cat_info = $this->getListCategoriesFilter();
+$list = $this->getListCriterionFilter();
+
+if (!empty($list)) {
+	$stop = (int)$this->_getConfig('stop',1) ? 'hover' : '';
+	$play = (int)$this->_getConfig('play',1);
+	$interval = (int)$this->_getConfig('delay');
+	$interval = $play ? $interval : 0;
+	$speed =(int)$this->_getConfig('duration');
+	$start = (int) $this->_getConfig('start');
+	$start = ( $start <= 0 || $start > count($list) ) ? 0 : $start - 1;
+	$step = (int)$this->_getConfig('scroll',1);
+	$step = $step <= 0 ? 1: $step;
+
+	$instance = rand() . time();
+	$tag_id = 'sm_super_categories_' . rand() . time();
+	$uniqued ='cat_slider_'.rand().time();
+	$class_spc = 'spc00-' . $this->_getConfig('nbi_column1', 4) . ' spc01-' . $this->_getConfig('nbi_column1', 3) . ' spc02-' . $this->_getConfig('nbi_column2', 3) . ' spc03-' . $this->_getConfig('nbi_column3', 2) . ' spc04-' . $this->_getConfig('nbi_column4', 1);
+
+	$width = (int)$this->_getConfig('img_cat_width');
+	$width = $width ? 'width:'.$width.'px;' : '';
+	$height = (int)$this->_getConfig('img_cat_height');
+	$height = $height ? 'height:'.$height.'px;' : '';
+
+	$style_img = 'style="'.$width.' '.$height.'"';
+
+	$nb_column1 = $this->_getConfig('nbi_column1', 6);
+	$nb_column2 = $this->_getConfig('nbi_column2', 6);
+	$nb_column3 = $this->_getConfig('nbi_column3', 6);
+	$nb_column4 = $this->_getConfig('nbi_column4', 6);
+	?>
+	<?php $class_respl = 'preset01-' . $this->_getConfig('nb_column1', 4) . ' preset02-' . $this->_getConfig('nb_column2', 3) . ' preset03-' . $this->_getConfig('nb_column3', 2) . ' preset04-' . $this->_getConfig('nb_column4', 2) . ' preset05-' . $this->_getConfig('nb_column5', 1); ?>
+	<!--[if lt IE 9]>
+	<div id="<?php echo $tag_id; ?>" class="sm-super-categories msie lt-ie9 first-load"><![endif]-->
+	<!--[if IE 9]>
+	<div id="<?php echo $tag_id; ?>" class="sm-super-categories msie first-load"><![endif]-->
+	<!--[if gt IE 9]><!-->
+	<div id="<?php echo $tag_id; ?>" class="sm-super-categories first-load"><!--<![endif]-->
+		<?php
+		$pretext = $this->_getConfig('pretext');
+		if (!empty($pretext)) {
+			?>
+			<div class="pre-text"><?php echo $this->_getConfig('pretext'); ?></div>
+		<?php } ?>
+		
+	<div class="row">
+		<div class="category-wrap col-lg-2 col-md-3">
+		<div class="inner">
+			<?php foreach( $cat_info as $cat){
+				$cat_child = $cat['child'];
+			?>
+				<div class="cat-title">
+					<?php echo $cat['name'];?>
+
+				</div>
+				
+				<?php if( $cat_child != null ){?>
+				<div class="list-cates">
+					
+					<?php foreach( $cat_child as $item ){
+						if( $item['image'] == "" ){
+							$item['image'] = $image_base = Mage::getModel('catalog/product')->getSmallImageUrl();
+						}
+					?>
+						<div class="item">
+							<div class="item-wrap">
+								<div class="cat-child-image">
+									<img <?php echo $style_img; ?> src="<?php echo $item['image'];?>" alt="<?php echo $item['name'];?>"/>
+								</div>
+								<div class="cat-child-title">
+									<a href="<?php echo $item['link'];?>" <?php echo $helper::parseTarget($this->_getConfig('product_links_target', '_self')) ?>>
+										<?php echo $helper->truncate($item['name'], $this->_getConfig('cat_title_maxlength', 25)); ?>
+									</a>								
+								</div>							
+							</div>
+						</div>
+					<?php }?>					
+				</div>
+				<?php }?>
+			<?php }?>
+		</div>
+		</div>
+
+		<div class="spc-wrap col-lg-10 col-md-9">			
+	
+			
+				<div class="spc-items-container"><!--Begin Items-->
+					<?php foreach ($list as $items) {
+						$child_items = isset($items->child) ? $items->child : '';
+						$cls_device = $class_spc;
+						$cls_animate = $this->_getConfig('effect');
+						$cls = (isset($items->sel) && $items->sel == "sel") ? ' spc-items-selected spc-items-loaded' : '';
+						$cls .= ($items->id == "*") ? ' items-category-all' : ' items-category-' . $items->id;
+						?>
+						<div class="spc-items <?php echo $cls; ?>">
+							<div class="spc-items-inner products-grid <?php echo $cls_device . ' ';
+							echo $cls_animate; ?>">
+								<?php if (!empty($child_items)) {
+									include('default_items_home4.php');
+								} else {
+									?>
+									<div class="spc-loading"></div>
+								<?php } ?>
+							</div>
+							<?php /*$classloaded = ($this->_getConfig('product_limitation', 5) >= $items->count || $this->_getConfig('product_limitation', 5) == 0) ? 'loaded' : ''; ?>
+											<div class="spc-loadmore"
+											     data-active-content=".items-category-<?php echo ($items->id == "*") ? 'all' : $items->id; ?>"
+											     data-categoryid="<?php echo $items->id; ?>"
+											     data-rl_start="<?php echo $this->_getConfig('product_limitation', 2) ?>"
+											     data-rl_total="<?php echo $items->count ?>"
+											     data-rl_allready="
+							<?php echo $this->__('All ready'); ?>"
+											     data-ajaxurl="
+							<?php  echo Mage::getBaseUrl().'supercategories/index/ajax'; ?>" data-modid="
+							<?php echo $items->id; ?>"
+											     data-rl_load="
+							<?php echo $this->_getConfig('source_limit', 2) ?>">
+												<div class="spc-loadmore-btn <?php echo $classloaded ?>"
+												     data-label="
+							<?php echo ($classloaded) ? $this->__('All ready') : $this->__('Load more'); ?>">
+													<span class="spc-image-loading"></span>
+													<img class="add-loadmore" src="<?php echo $this->getSkinUrl('sm/supercategories/images/add.png');?>" alt="" />
+												</div>
+											</div>
+
+											<?php */ ?>
+						</div>
+					<?php } ?>
+													
+				</div>
+				<div class="cate-img">
+					<!-- <a href="#"><?php echo $this->__('Category image'); ?></a> -->
+					<a href="<?php echo $cat['link'];?>"><img alt="<?php echo $this->__('Category image'); ?>" src="<?php echo $cat['image'];?>" /></a> 
+				</div>
+				
+		</div>
+		
+	</div>	
+		
+		<?php
+		$posttext = $this->_getConfig('posttext');
+		if (!empty($posttext)) {
+			?>
+			<div class="post-text"><?php echo $this->_getConfig('posttext'); ?></div>
+		<?php } ?>
+	</div>
+<?php
+} else {
+	echo 'Has no item to show!';
+} ?>
+
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function($){
+        $('#<?php echo $uniqued;?> .slider').responsiver({
+			interval: <?php echo $interval; ?>,
+			speed: <?php echo $speed; ?>,
+			start: <?php echo $start; ?>,
+			step: <?php echo $step; ?>,
+			circular: true,
+			preload: true,
+			fx: 'slide',
+			pause: '<?php echo $stop;?>',
+			control:{
+				prev: '#<?php echo $tag_id;?> .control-button li[class="preview"]',
+				next: '#<?php echo $tag_id;?> .control-button li[class="next"]'
+			},			
+			getColumns: function(element){
+				var match = $(element).attr('class').match(/cols-(\d+)/);
+				if (match[1]){
+					var column = parseInt(match[1]);
+				} else {
+					var column = 1;
+				}
+				if (!column) column = 1;
+				return column;
+			}          
+        });
+    });
+//]]>
+</script>
+
+<script>
+	jQuery(document).ready(function($) {
+		var owl_upsell = $(".spc-items-inner");
+		owl_upsell.owlCarousel({
+			
+			responsive:{
+				0: {
+					items:<?php echo $nb_column4;?>
+				},
+				480: {
+					items:<?php echo $nb_column3;?>
+				},
+				768: {
+					items:<?php echo $nb_column2;?>
+				},
+				1200: {
+					items:<?php echo $nb_column1;?>
+				}
+			},
+
+			autoplay:false,
+			loop:false,
+			nav : true, // Show next and prev buttons
+			dots: false,
+			autoplaySpeed : 500,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+
+		});	  
+	});	
+</script>
+

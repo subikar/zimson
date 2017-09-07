@@ -1,0 +1,81 @@
+<?php
+/*------------------------------------------------------------------------
+ # SM Mega Menu - Version 1.1
+ # Copyright (c) 2013 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/
+
+include_once 'Mobile_Detect.php';
+$prefix = Sm_Megamenu_Model_System_Config_Source_Html::PREFIX;
+$smarthelper= Mage::helper('megamenu/utils');
+$itemsStartLv = $this->getItems();
+$config = $this->getConfigObject();
+$uq = uniqid($prefix.'menu');
+$detect = new Mobile_Detect();
+if($config['theme']==Sm_Megamenu_Model_System_Config_Source_ListTheme::HORIZONTAL){
+$theme = 'horizontal';
+}
+if($config['theme']==Sm_Megamenu_Model_System_Config_Source_ListTheme::VERTICAL){
+$theme = 'vertical'; 
+}
+$instance	= rand().time();
+echo $this->getScriptTags();
+$firstClassName = "";
+?>
+<?php if(count($itemsStartLv)):?>
+	<?php include dirname(__FILE__) . '/js/add_js_by_effect.phtml'; ?>
+	<?php // include dirname(__FILE__) . '/css/add_css_by_theme.phtml'; ?>
+
+	
+	
+	<div class="block block-megamenu-vertical <?php echo $prefix; ?>wrapper_<?php echo $theme?>_menu sambar" id="<?php echo $uq; ?>" data-sam="<?php echo $instance; ?>">
+		<?php if (!empty($config['title'])): ?>
+			<div class="block-title">
+				<strong>
+					<span><?php echo $config['title']; ?></span>
+				</strong>
+			</div>
+		<?php endif; ?>
+	
+		<div class="block-content">
+			<ul class="<?php if ( !$detect->isMobile() && !$detect->isTablet() ) { echo "sm-megamenu-hover";}?> <?php echo $prefix; ?>menu <?php echo $prefix; ?>menu_black megamenu-vertical" data-jsapi="on">
+			<?php 	foreach($itemsStartLv as $itemStartLv){ ?>
+						<li class="<?php if($itemStartLv->getCustomClass()){ echo $itemStartLv->getCustomClass().'-parent ';}?><?php if( $config['effect'] == 1 || $config['effect'] == 2 ){ echo 'other-toggle ';}?>  
+						<?php echo $prefix; ?>lv1 <?php echo (!$this->isLeaf($itemStartLv) OR ($this->isLeaf($itemStartLv) AND $this->hasConntentType($itemStartLv)))?$prefix.'drop parent':$prefix.'nodrop'?>  <?php echo ($this->isAlignRight($itemStartLv))?$prefix.'right':''?> <?php echo ($this->isActived($itemStartLv))?$prefix.'actived':'' ?>">
+												<a class="<?php echo $prefix; ?>head <?php echo (!$this->isLeaf($itemStartLv) OR ($this->isLeaf($itemStartLv) AND $this->hasConntentType($itemStartLv)))?$prefix.'drop':$prefix.'nodrop'?> <?php echo ($this->isActived($itemStartLv))?$prefix.'actived'.' '.$prefix.'top_actived':'' ?>" href="<?php echo ($this->hasLinkType($itemStartLv))?$this->getLinkOfType($itemStartLv):'javascript:void(0)'?>" <?php echo ($this->hasLinkType($itemStartLv))?$smarthelper->getTargetAttr($itemStartLv->getTarget()):'' ?> id="<?php echo $prefix.$itemStartLv->getId()?>">
+													<?php if($this->hasIcon($itemStartLv)) {	?>
+													<span style="background: url('<?php echo $this->filterImage($itemStartLv);?>') no-repeat scroll 0% 50% transparent;" class="<?php echo $prefix; ?>icon <?php if(!$itemStartLv->getDescription()){echo $prefix.'nodesc';}?>">		
+													<?php }else{	?>
+													<span class="<?php echo $prefix; ?>icon <?php if(!$itemStartLv->getDescription()){echo $prefix.'nodesc';}?>">		
+													<?php } ?>
+															<span class="<?php echo $prefix; ?>title"><?php echo $itemStartLv->getTitle() ?></span>
+														<?php if($itemStartLv->getDescription()):?>
+															<span class="<?php echo $prefix; ?>description"><?php echo $itemStartLv->getDescription() ?>&nbsp;</span>	
+														<?php endif?>			
+													<?php //if($this->hasIcon($itemStartLv)) {	?>	
+													</span>
+													<?php //}	?>
+												</a>
+						
+						</li>
+			<?php	}	?>
+			</ul>
+		</div>
+	</div>
+	<!--End Module-->
+<?php else: ?>
+<p class="note-msg"><?php echo $this->__('There are no items matching the selection.') ?></p>
+<?php endif; ?>
+
+<script type="text/javascript">
+// <![CDATA[ 
+	jQuery(document).ready(function($){
+
+	});
+// ]]> 
+</script>
+
+
+

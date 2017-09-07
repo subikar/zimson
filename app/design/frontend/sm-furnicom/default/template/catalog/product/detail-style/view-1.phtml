@@ -1,0 +1,371 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php
+	$_product = $this->getProduct(); 
+	$specialprice = $_product->special_price;
+	$specialPriceToDate = $_product->special_to_date;
+	$today =  time();
+?>
+
+<?php
+	$related_products = $this->getChildHtml('related_products');
+	$upsell_products = $this->getChildHtml('upsell_products');
+?>
+
+<?php 
+	$thumb_style = "";
+	$vertical_style = "";
+	$detail_style = "" ;
+	$config = Mage::helper('furnicom/config');
+?>
+
+<?php 
+	
+	if (isset($_REQUEST['detail_style'])) {
+		$detail_style = intval($_REQUEST['detail_style']);
+	} else {
+		$detail_style = $config->getProductSetting('detail_style');
+	}	
+	
+	if (isset($_REQUEST['thumbstyle'])) {
+		$thumb_style = intval($_REQUEST['thumbstyle']);
+		if($thumb_style == 1){
+			$thumb_style = "horizontal";
+		} else {
+			$thumb_style = "vertical";
+		}
+	} else {
+		$thumb_style = $config->getProductSetting('thumbs_style');
+	}
+
+
+	if($thumb_style != 'horizontal'  || $vertical_style == 1){
+		$class_imagebox = "product-img-box col-lg-4 col-md-4 col-sm-12";
+		$class_infobox = "product-shop col-lg-4 col-md-4 col-sm-12";
+		$class_additional_infobox = "product-shop col-lg-4 col-md-4 col-sm-12";
+	} else {
+		$class_imagebox = "product-img-box col-lg-5 col-md-5 col-sm-6";
+		$class_infobox = "product-shop col-lg-7 col-md-7 col-sm-6";
+	}
+
+	global $show_rich_snippet;
+	$show_rich_snippet = 1;
+	$rich_snippet = $config->getRichSnippetsSetting('use_rich_snippet');
+
+?>
+
+
+
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+
+<div class="detail-style-<?php echo $detail_style;?> thumbs-style-<?php echo $thumb_style;?>">
+	<div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
+	<div class="product-view view-wrapper" <?php if ( $rich_snippet == 1 ) {?>itemscope itemtype="http://schema.org/Product"<?php }?>>
+		<div class="box-content padding-box">
+			<div class="product-essential">
+				<form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+					<?php echo $this->getBlockHtml('formkey') ?>
+					<div class="no-display">
+						<input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+						<input type="hidden" name="related_product" id="related-products-field" value="" />
+					</div>
+
+					<div class="row">
+
+						<div class="<?php echo $class_imagebox;?>">
+							<?php echo $this->getChildHtml('media') ?>
+						</div>
+
+						<div class="<?php echo $class_infobox; ?>">
+							<div class="product-name">
+								<h1 <?php if ( $rich_snippet == 1 ) {?>itemprop="name"<?php }?>>
+									<?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?>
+								</h1>
+                                                             <!-- Code start & add by raj -->
+								<div class="product-sku">																								
+								    <ul>
+									<li><?php echo $_helper->productAttribute($_product, $_product->getSku(), 'sku') ?></li>						
+								    </ul>
+								</div>
+							     <!-- Code end by raj -->                                                             
+							</div>
+
+							<?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+
+							
+							<?php echo $this->getChildHtml('alert_urls') ?>
+
+							<?php 
+								global $rp_price_flag;
+								$rp_price_flag = 0;
+								echo $this->getChildHtml('product_type_data');
+								$rp_price_flag = 1;
+							?>
+                            <div class="price-block">      
+							<?php echo $this->getTierPriceHtml() ?>
+                            <?php 
+	                            $Fprice =  $_product->getFinalPrice(); 
+								$rate = 0.15 / 12; // Monthly interest rate
+								$term = 24; // Term in months
+
+								$emi = $Fprice * $rate * (pow(1 + $rate, $term) / (pow(1 + $rate, $term) - 1));
+								$emi = round($emi,2);                              
+
+                            ?>  
+							<div class="emi-option"><i class="fa fa-calendar" aria-hidden="true"></i> EMI STARTS FROM Rs. <?php echo $emi;?></div>
+						    </div>
+							<?php echo $this->getChildHtml('extrahint') ?>
+
+                            <?php if (!$this->hasOptions()):?>
+								<div class="add-to-box">
+
+									<?php if($_product->isSaleable()): ?>
+										<?php echo $this->getChildHtml('addtocart') ?>
+										<?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+										<?php endif; ?>
+									<?php endif; ?>
+									<?php echo $this->getChildHtml('addto') ?>
+									
+								</div>
+								<?php //echo $this->getChildHtml('extra_buttons') ?>
+
+							<?php elseif (!$_product->isSaleable()): ?>
+								<div class="add-to-box">
+									<?php echo $this->getChildHtml('addto') ?>
+								</div>
+							<?php endif; ?>	
+
+                      <div class="row">
+                     	<div class="col-sm-12">
+                      		<ul class="brand-services">
+                      		<?php if ($_product->getDisableAddtocart() == 358) : ?>
+                      		<li><a data-original-title="Swiss Made" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title=""><img src="<?php echo $this->getSkinUrl('images/Image-1.png?1488452141', array('_secure'=>true));?>"></a></li>
+                      		<?php endif; ?>
+
+                            <li><a data-original-title="After Sale Service" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title=""><img src="<?php echo $this->getSkinUrl('images/Image-2.png?1488452141', array('_secure'=>true));?>"></a></li>
+                            <li><a data-original-title="2 Years Warranty" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title=""><img src="<?php echo $this->getSkinUrl('images/Image-3.png?1488452141', array('_secure'=>true));?>"></a></li>
+                            <li><a data-original-title="24x7 Expert Advice" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title=""><img src="<?php echo $this->getSkinUrl('images/Image-4.png?1488452141', array('_secure'=>true));?>"></a></li>
+                            <li><a data-original-title="100% Authentic Watches" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title=""><img src="<?php echo $this->getSkinUrl('images/Image-5.png?1488452141', array('_secure'=>true));?>"></a></li></ul>
+                     	</div> 
+                     </div>																	
+
+
+							<?php if ($_product->getShortDescription()):?>
+								<div class="short-description">
+									<p><?php echo $this->__('Quick Overview:');?></p>
+									<div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+								</div>
+							<?php endif;?>
+							
+
+							
+
+							<?php echo $this->getChildHtml('other');?>
+
+							<?php if ($_product->isSaleable() && $this->hasOptions()):?>
+								<?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+							<?php endif;?>
+
+							<div class="like-socials">
+								<div class="addthis_toolbox addthis_default_style ">
+									<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+									<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html" style="width:95px; height:20px; float:left;"></iframe>						                              
+												<!--<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>-->
+									<a style="display:inline-block; width:50px; height:40px;" class="addthis_button_compact">
+										 <img src="<?php echo $this->getSkinUrl('images/share-button.png') ?>"
+									  border="0" alt="Share" /></a> 
+								</div>
+								
+								<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+										   
+								<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-529be2200cc72db5"></script>
+								
+											
+							</div>
+
+						</div>
+						<div class="<?php echo $class_additional_infobox; ?>">
+						<?php if ($_additional = $this->getChildHtml('additional')):?>
+						<div>
+							<?php echo $_additional ?>
+						</div>
+						<?php endif; ?>						
+						</div>
+					</div>
+	
+					<div class="clearfix"></div>
+					<?php if ($_product->isSaleable() && $this->hasOptions()):?>
+						<?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+					<?php endif;?>
+				</form>
+				<script type="text/javascript">
+				//<![CDATA[
+					var productAddToCartForm = new VarienForm('product_addtocart_form');
+					productAddToCartForm.submit = function(button, url) {
+						if (this.validator.validate()) {
+							var form = this.form;
+							var oldUrl = form.action;
+
+							if (url) {
+							   form.action = url;
+							}
+							var e = null;
+							try {
+								this.form.submit();
+							} catch (e) {
+							}
+							this.form.action = oldUrl;
+							if (e) {
+								throw e;
+							}
+
+							if (button && button != 'undefined') {
+								button.disabled = true;
+							}
+						}
+					}.bind(productAddToCartForm);
+
+					productAddToCartForm.submitLight = function(button, url){
+						if(this.validator) {
+							var nv = Validation.methods;
+							delete Validation.methods['required-entry'];
+							delete Validation.methods['validate-one-required'];
+							delete Validation.methods['validate-one-required-by-name'];
+							// Remove custom datetime validators
+							for (var methodName in Validation.methods) {
+								if (methodName.match(/^validate-datetime-.*/i)) {
+									delete Validation.methods[methodName];
+								}
+							}
+
+							if (this.validator.validate()) {
+								if (url) {
+									this.form.action = url;
+								}
+								this.form.submit();
+							}
+							Object.extend(Validation.methods, nv);
+						}
+					}.bind(productAddToCartForm);
+				//]]>
+				</script>
+			</div>
+			<?php if($config->getProductSetting('show_related') == 1 && trim($related_products) != ""){ ?>
+				<div class="wow fadeInUp">
+					<div class="box-content box-related-upsell">
+						<?php echo $related_products;?>
+					</div>
+				</div>
+				<br clear="all" /> <br clear="all" /> 
+			<?php } ?>
+			<span id="openReviewForm"></span> 
+			<div class="product-collateral">
+				<div class="tab-product-info" id="tab-product-view">
+					<ul class="resp-tabs-list">
+						<?php if ($_description = $this->getChildHtml('description')):?>
+							<li><?php echo $this->__('Description')?></li>
+						<?php endif; ?>
+						
+						<?php if($review_form = $this->getChildHtml('review_form')): ?>
+							<li id="review-tab"><?php echo $this->__('Reviews') ?></li>
+						<?php endif; ?>
+						
+						<?php if($config->getProductSetting('show_customtab') == 1){?>
+							<li><?php echo $config->getProductSetting('customtab_name')?></li> 
+						<?php } ?>
+						
+					</ul>
+					<div class="resp-tabs-container">
+				
+						<?php if ( $_description ):?>
+						<div>
+							<?php echo $_description ?>
+						</div>
+						<?php endif; ?>
+
+						
+						<?php if( $review_form ): ?>
+							<div id="yt_tab_reviewform" class="tab-pane">
+								<?php 
+									echo $this->getChildHtml('product_reviews');
+									echo $review_form; 
+								?>
+							</div>
+						<?php endif;?>	
+						
+						<?php if($config->getProductSetting('show_customtab') == 1){?>
+						<div>
+							<?php 
+								$contenttab = $config->getProductSetting('customtab_content');             
+								$_myHelper = Mage::helper('cms');
+								$_processor = $_myHelper->getBlockTemplateProcessor();
+								echo $_processor->filter($contenttab); 
+							?>
+						</div>
+						<?php } ?>
+					</div>
+					
+					<script type="text/javascript">
+						jQuery(document).ready(function ($) {
+							$('#tab-product-view').easyResponsiveTabs({
+								type: 'default', //Types: default, vertical, accordion
+								width: 'auto', //auto or any width like 600px
+								fit: true,   // 100% fit in a container
+								closed: 'accordion', // Start closed if in accordion view
+								/* activate: function(event) { 
+									console.log('actived');
+								} */
+							});
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<?php if($config->getProductSetting('show_upsell') == 1 && trim($upsell_products) != ""){?>
+		    <br clear="all" /> <br clear="all" /> 
+			<div class="wow fadeInUp">
+				<div class="box-content box-related-upsell last-block">
+					<?php echo $this->getChildHtml('upsell_products');?>
+				</div>
+			</div>
+		<?php } ?>
+
+	</div>
+</div>

@@ -1,0 +1,1794 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title>Footer Links SM</title>
+      <identifier>footer_links_sm</identifier>
+      <content><![CDATA[<div class="links social-media">
+	<div class="block-title">
+		<strong><span>Connect With Us</span></strong>
+	</div>
+	<ul>
+		<li><a href="#"><em class="facebook"></em>Facebook</a></li>
+		<li><a href="#"><em class="twitter"></em>Twitter</a></li>
+		<li><a href="#"><em class="youtube"></em>YouTube</a></li>
+		<li><a href="#"><em class="pinterest"></em>Pinterest</a></li>
+		<li class="last"><a href="#"><em class="rss"></em>RSS</a></li>
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Main image 404 Page</title>
+      <identifier>main-image-404-page</identifier>
+      <content><![CDATA[<img title="image404" src="{{skin url='images/media/image404.png'}}" alt="image404" />]]></content>
+      <is_active>1</is_active>
+      <store_id>1</store_id>
+    </cms_block>
+    <cms_block>
+      <title>PLP Header</title>
+      <identifier>plp-header</identifier>
+      <content><![CDATA[<div style="    border: 1px solid #E1E1E1;    height: 264px;    margin-bottom: 10px;    padding: 7px;">
+<div style="background: url('{{skin url=images/media/plp_header/bg_plp_header_1.jpg}}') no-repeat scroll left top transparent;    height: 264px; position:relative">
+<p style="  font-size: 22px;  color: #000000;    font-weight: 600;    line-height: 20px;    right: 70px;    top: 100px;    text-align: center; position: absolute;">OUR NEW COLLECTION <br/>IS HERE <br/><a href="#" class="button with-right-arrow" style="margin-top:10px"><span>SHOP NEW ARRIVALS</span></a></p>
+</div></div>]]></content>
+      <is_active>1</is_active>
+      <store_id>1</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Cookie restriction notice</title>
+      <identifier>cookie_restriction_notice_block</identifier>
+      <content><![CDATA[<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - About Us Style 1</title>
+      <identifier>about-us-style1</identifier>
+      <content><![CDATA[<div class="about-us about-demo-1">
+	<div class="row">
+		<div class="col-lg-5 col-md-5 about-image">
+			<img src="{{media url="wysiwyg/about-us-page/about-us.jpg"}}" alt="About Us" />
+		</div>
+		
+		<div class="col-lg-7 col-md-7 about-info">
+			<h2 class="about-title">About Us</h2>
+			<div class="about-text">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.<br>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 what-client-say">
+			<div class="client-say-content">
+				<h2 class="about-title">What Clients Say</h2>
+				
+				<div class="client-say-slider">
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+					
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+					
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+					
+					<div class="item">
+						<p class="des-member des-client">&ldquo;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.&rdquo;</p>
+						<h3 class="name-member">Jennifer lawrence</h3>
+						<p class="job-member">Co Founder</p>
+					</div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var client_say_slider = $(".client-say-slider");
+						client_say_slider.owlCarousel({
+							responsive:{
+								0:{
+									items:1
+								},
+								480:{
+									items:1
+								},
+								768:{
+									items:1
+								},
+								992:{
+									items:1
+								},
+								1200:{
+									items:1
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : false,
+							dots: true,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 our-team">
+			<div class="our-team-content">
+				<h2 class="about-title">Our Team</h2>
+				
+				<div class="our-team-slider">
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-1.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-2.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-3.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-4.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-1.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var our_team_slider = $(".our-team-slider");
+						our_team_slider.owlCarousel({
+							responsive:{
+								0:{
+									items:1
+								},
+								480:{
+									items:2
+								},
+								768:{
+									items:3
+								},
+								992:{
+									items:3
+								},
+								1200:{
+									items:4
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : true,
+							dots: false,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - About Us Style 2</title>
+      <identifier>about-us-style2</identifier>
+      <content><![CDATA[<div class="about-us about-demo-2">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 about-us-center">
+			<div class="about-image-slider">
+				<div class="slider-image-content">
+					<div class="item"><img src="{{media url="wysiwyg/about-us-page/about-slider/about-1.jpg"}}" alt="About Us" /></div>
+					<div class="item"><img src="{{media url="wysiwyg/about-us-page/about-slider/about-2.jpg"}}" alt="About Us" /></div>
+					<div class="item"><img src="{{media url="wysiwyg/about-us-page/about-slider/about-3.jpg"}}" alt="About Us" /></div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var slider_image_about = $(".slider-image-content");
+						slider_image_about.owlCarousel({
+							responsive:{
+								0:{
+									items:1
+								},
+								480:{
+									items:1
+								},
+								768:{
+									items:1
+								},
+								992:{
+									items:1
+								},
+								1200:{
+									items:1
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : true,
+							dots: false,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+			</div>
+			
+			<div class="content-description">
+				<h2 class="about-title">About Us</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+				<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 our-team">
+			<div class="our-team-content">
+				<div class="our-team-slider">
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-1.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-2.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-3.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-4.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="member">
+							<div class="member-image">
+								<img src="{{media url="wysiwyg/about-us-page/member/member-1.jpg"}}" alt="Image Client" />
+							</div>
+							
+							<div class="member-info">
+								<h3 class="name-member">Jennifer lawrence</h3>
+								<p class="job-member">Co Founder</p>
+								<p class="des-member">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum</p>
+								<ul class="social-member">
+									<li class="social-icon rss"><a class="fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+									<li class="social-icon facebook"><a class="fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+									<li class="social-icon twitter"><a class="fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+									<li class="social-icon google"><a class="fa fa-google" href="#" title="Google"><span>Google</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var our_team_slider = $(".our-team-slider");
+						our_team_slider.owlCarousel({
+							responsive:{
+								0:{
+									items:1
+								},
+								480:{
+									items:2
+								},
+								768:{
+									items:3
+								},
+								992:{
+									items:3
+								},
+								1200:{
+									items:4
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : true,
+							dots: false,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 client-logo">
+			<div class="client-logo-content">
+				<h2 class="about-title">Our Happy Clients</h2>
+				
+				<div class="client-logo-slider">
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-1.png"}}" alt="Client" /></a>
+					</div>
+					
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-2.png"}}" alt="Client" /></a>
+					</div>
+					
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-3.png"}}" alt="Client" /></a>
+					</div>
+					
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-4.png"}}" alt="Client" /></a>
+					</div>
+					
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-5.png"}}" alt="Client" /></a>
+					</div>
+					
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-6.png"}}" alt="Client" /></a>
+					</div>
+					
+					<div class="item">
+						<a href="#" title="Client"><img src="{{media url="wysiwyg/about-us-page/logo-client/about-client-1.png"}}" alt="Client" /></a>
+					</div>
+				</div>
+				
+				<script>
+					jQuery(document).ready(function($) {
+						var client_logo_slider = $(".client-logo-slider");
+						client_logo_slider.owlCarousel({
+							responsive:{
+								0:{
+									items:2
+								},
+								480:{
+									items:3
+								},
+								768:{
+									items:5
+								},
+								992:{
+									items:5
+								},
+								1200:{
+									items:6
+								}
+							},
+							
+							autoplay:false,
+							loop:false,
+							nav : true,
+							dots: false,
+							autoplaySpeed : 500,
+							navSpeed : 500,
+							dotsSpeed : 500,
+							autoplayHoverPause: true,
+							margin:30,
+						});
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - About Us Style 3</title>
+      <identifier>about-us-style3</identifier>
+      <content><![CDATA[<div class="about-us about-demo-3">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 about-image">
+			<img src="{{media url="wysiwyg/about-us-page/about-us-demo3.jpg"}}" alt="About Us" />
+		</div>
+		
+		<div class="col-lg-6 col-md-6 about-info">
+			<h2 class="about-title">About Us</h2>
+			<div class="about-text">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+				</p>
+				<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6 col-md-6 skills-description">
+			<h2 class="about-title">Our Skills</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br> 
+				Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+			</p>
+		</div>
+		
+		<div class="col-lg-6 col-md-6 skills-value">
+			<ul class="value-list">
+				<li class="item">
+					<p class="label-skill">Skill Lorem ipsum:</p>
+					<div class="range-value" style="background-color:#d9d9d9">
+						<span class="rating-skills skill-1" style="width:85%;">85%</span>
+					</div>
+				</li>
+				
+				<li class="item">
+					<p class="label-skill">Skill donec pede:</p>
+					<div class="range-value" style="background-color:#d9d9d9">
+						<span class="rating-skills skill-2" style="width:74%;">74%</span>
+					</div>
+				</li>
+				
+				<li class="item">
+					<p class="label-skill">Skill nulla consequat:</p>
+					<div class="range-value" style="background-color:#d9d9d9">
+						<span class="rating-skills skill-3" style="width:89%;">89%</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - About Us Style 4</title>
+      <identifier>about-us-style4</identifier>
+      <content><![CDATA[<div class="about-us about-demo-4">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 about-us-content">
+			<div class="content-about">
+				<h2 class="about-title">About Us</h2>
+				<img src="{{media url="wysiwyg/about-us-page/about-us-demo4.jpg"}}" alt="About Us" />
+				<p class="description-about">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.<br>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec vulputate
+				</p>
+			</div>
+		</div>
+		
+		<div class="col-lg-6 col-md-6 faq-about-us">
+			<h2 class="about-title">Faqs</h2>
+			<div class="content-faq">
+				<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel">
+					<div class="panel-head" role="tab" id="headingOne">
+					  <h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  <span>Etharums ser quidem rerum?</span>
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					  <div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel">
+					<div class="panel-head" role="tab" id="headingTwo">
+					  <h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  <span>Lorem ipsum dolor sit amet?</span>
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					  <div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel">
+					<div class="panel-head" role="tab" id="headingThree">
+					  <h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						  <span>Nam vitae felis pretium, euismod ipsum nec?</span>
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					  <div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel">
+					<div class="panel-head" role="tab" id="headingFour">
+					  <h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						  <span>Quisque posuere dolor in malesuada?</span>
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+					  <div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel">
+					<div class="panel-head" role="tab" id="headingFive">
+					  <h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						  <span>Quisque posuere dolor in malesuada?</span>
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+					  <div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div class="panel">
+					<div class="panel-head" role="tab" id="headingSix">
+					  <h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						  <span>Lorem ipsum dolor sit amet?</span>
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+					  <div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact - Google Map</title>
+      <identifier>contact-googlemap</identifier>
+      <content/>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact Us Style 1 </title>
+      <identifier>contact-us-style1</identifier>
+      <content><![CDATA[<div class="contact-us contact-demo-1">
+	<div class="title-contact">
+		<h2>Contact Us</h2>
+	</div>
+	
+	<div class="google-map">
+		{{block type="cms/block" name="google_map" block_id="contact-googlemap"}} 
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-info">
+				<div class="title-contact-normal">
+					<h2>About Us</h2>
+				</div>	
+				
+					<div class="contact-content">
+						<p class="contact-description">
+							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam<br>
+							Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat sed do eiusmod tempor incididunt ut labore dolore
+						</p>
+						
+						<ul class="address-info">
+							<li class="add-icon">123 Suspendis mattis, Sollicitudin District,<br>Accums Fringilla</li>
+							<li class="email-icon">Email: <a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a></li>
+							<li class="phone-icon">Hotline: <a title="Call" href="tel:0123456789">0123456789</a></li>
+						</ul>
+						
+						<ul class="social-list">
+							<li><a class="icon-social fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+							<li><a class="icon-social fa fa fa-google-plus" href="#" title="Google"><span>Google</span></a></li>
+							<li><a class="icon-social fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+							<li><a class="icon-social fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+							<li><a class="icon-social fa fa fa-youtube" href="#" title="Youtube"><span>Youtube</span></a></li>
+						</ul>
+					</div>
+				
+			</div>
+		</div>
+		
+		<div class="col-lg-8 col-md-8">
+			<div class="contact-form">
+				<div class="title-contact-normal">
+					<h2>Send Your Comments</h2>
+				</div>
+				
+				<div class="request-form">
+					{{block type="core/template" name="contactForm" template="contacts/form.phtml"}} 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact Us Style 2</title>
+      <identifier>contact-us-style2</identifier>
+      <content><![CDATA[<div class="contact-us contact-demo-2">
+	<div class="title-contact">
+		<h2>Contact Us</h2>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-6 col-md-6">
+			<div class="google-map">
+				{{block type="cms/block" name="google_map" block_id="contact-googlemap"}} 
+			</div>
+		</div>
+		
+		<div class="col-lg-6 col-md-6">
+			<div class="contact-form">
+				<div class="title-contact-normal">
+					<h2>Send Your Comments</h2>
+				</div>
+				
+				<div class="request-form">
+					{{block type="core/template" name="contactForm" template="contacts/form.phtml"}} 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-info">
+				<div class="title-contact-normal">
+					<h2>Main Office</h2>
+				</div>
+				
+				<div class="contact-content">
+					<ul class="address-info">
+						<li class="add-icon">123 Suspendis mattis, Sollicitudin District,<br>Accums Fringilla</li>
+						<li class="email-icon">Email: <a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a></li>
+						<li class="phone-icon">Hotline: <a title="Call" href="tel:0123456789">0123456789</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-info">
+				<div class="title-contact-normal">
+					<h2>Chicago Agent</h2>
+				</div>
+				
+				<div class="contact-content">
+					<ul class="address-info">
+						<li class="add-icon">123 Suspendis mattis, Sollicitudin District,<br>Accums Fringilla</li>
+						<li class="email-icon">Email: <a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a></li>
+						<li class="phone-icon">Hotline: <a title="Call" href="tel:0123456789">0123456789</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-info">
+				<div class="title-contact-normal">
+					<h2>New York Agent</h2>
+				</div>
+				
+				<div class="contact-content">
+					<ul class="address-info">
+						<li class="add-icon">123 Suspendis mattis, Sollicitudin District,<br>Accums Fringilla</li>
+						<li class="email-icon">Email: <a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a></li>
+						<li class="phone-icon">Hotline: <a title="Call" href="tel:0123456789">0123456789</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact Us Style 3</title>
+      <identifier>contact-us-style3</identifier>
+      <content><![CDATA[<div class="contact-us contact-demo-3">
+	<div class="title-contact">
+		<h2>Contact Us</h2>
+	</div>
+	
+	<div class="google-map">
+		{{block type="cms/block" name="google_map" block_id="contact-googlemap"}} 
+	</div>
+	
+	<div class="description-contact-dm4">
+		Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Quis nostrud exercitation llamco laboris nisi ut aliquip ex ea commodo consequat sed do eiusmod tempor incididunt ut labore dolore
+	</div>
+	
+	<div class="list-contact-wrapper">
+		<div class="row">
+			<ul class="list-info-contact">
+				<li class="col-lg-4 col-md-4">
+					<div class="address-contact">
+						123 Suspendis mattis, Sollicitudin District,<br>
+						Accums Fringilla
+					</div>
+				</li>
+				
+				<li class="col-lg-4 col-md-4">
+					<div class="email-contact">
+						<p>Email: </p>
+						<p>
+							<a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a><br>
+							<a title="Send Email" href="mailto:contact@domainstore.com">contact@domainstore.com</a>
+						</p>
+					</div>
+				</li>
+				
+				<li class="col-lg-4 col-md-4">
+					<div class="hotline-contact">
+						<p>Hotline: </p>
+						<p>
+							<a title="Call" href="tel:0123456789">012-3456-789</a><br>
+							<a title="Call" href="tel:012345678910">012-3456-78910</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="contact-form">
+				<div class="title-contact-normal">
+					<h2>Send Your Comments</h2>
+				</div>
+				
+				<div class="request-form">
+					{{block type="core/template" name="contactForm" template="contacts/form2.phtml"}} 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Theme - Contact Us Style 4</title>
+      <identifier>contact-us-style4</identifier>
+      <content><![CDATA[<div class="contact-us contact-demo-4">
+	<div class="title-contact">
+		<h2>Contact Us</h2>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-info">
+					<div class="contact-content">
+						<p class="contact-description">
+							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, llamco laboris nisi ut aliquip sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Quis nostrud exercitation llamco laboris nisi ut aliquip ex ea commodo consequat sed do eiusmod tempor incididunt ut labore dolore labore et dolor sit amet
+						</p>
+						
+						<ul class="address-info">
+							<li class="add-icon">123 Suspendis mattis, Sollicitudin District,<br>Accums Fringilla</li>
+							<li class="email-icon">Email: <a title="Send Email" href="mailto:support@domainstore.com">support@domainstore.com</a></li>
+							<li class="phone-icon">Hotline: <a title="Call" href="tel:0123456789">0123456789</a></li>
+						</ul>
+						
+						<ul class="social-list">
+							<li><a class="icon-social fa fa-facebook" href="#" title="Facebook"><span>Facebook</span></a></li>
+							<li><a class="icon-social fa fa fa-google-plus" href="#" title="Google"><span>Google</span></a></li>
+							<li><a class="icon-social fa fa-twitter" href="#" title="Twitter"><span>Twitter</span></a></li>
+							<li><a class="icon-social fa fa-rss" href="#" title="RSS"><span>RSS</span></a></li>
+							<li><a class="icon-social fa fa fa-youtube" href="#" title="Youtube"><span>Youtube</span></a></li>
+						</ul>
+					</div>
+				
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4">
+			<div class="google-map">
+				{{block type="cms/block" name="google_map" block_id="contact-googlemap"}} 
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-4">
+			<div class="contact-form">
+				<div class="title-contact-normal">
+					<h2>Send Your Comments</h2>
+				</div>
+				
+				<div class="request-form">
+					{{block type="core/template" name="contactForm" template="contacts/form.phtml"}} 
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Header Dropdown My Account</title>
+      <identifier>dropdown-my-account</identifier>
+      <content><![CDATA[										<ul class="dropdown-list">
+                                                                                        <li><a title="My Orders" href="{{store url="wishlist"}}">My Wishlist</a></li>
+											<li><a title="My Orders" href="{{store url="sales/order/history"}}">My Orders</a></li>											
+											<li><a title="Address Book" href="{{store url="customer/address"}}">Address Book</a></li>
+											<li><a title="My Tags" href="{{store url="tag/customer"}}">My Tags</a></li>
+											<li><a title="Billing Agreements" href="{{store url="sales/billing_agreement"}}">Billing Agreements</a></li>
+											<li><a title="Recurring Profiles" href="{{store url="sales/recurring_profile"}}">Recurring Profiles</a></li>
+										</ul>
+									]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Image Sidebar</title>
+      <identifier>image-static-sidebar</identifier>
+      <content><![CDATA[<div class="wow fadeInUp">
+<div class="static-image-sidebar" style="margin-bottom:30px;">
+<a title="Static Image" href="#"><img src="{{media url="wysiwyg/sidebar/img-sidebar.jpg"}}" alt="Static Image" /></a>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Left col Product Sidebar</title>
+      <identifier>product-sidebar</identifier>
+      <content><![CDATA[{{block type="basicproducts/list" name="basicproducts.list.sidebar" template="sm/basicproducts/basic-product-list.phtml"
+	product_limitation="3"
+	basicproducts_title_text="Best Sellers"
+	product_order_dir="ASC"
+	product_order_by="best_sales"
+	product_title_maxlength="50"
+	product_title_display="1"
+	product_price_display="1"
+	product_reviews_count="1"
+	product_addcart_display="0"
+	product_addwishlist_display="0"
+	product_addcompare_display="0"
+	product_readmore_display="0"
+	product_description_display="0"
+	imgcfg_width="110"
+	imgcfg_height="110"
+}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 1 - testimonial</title>
+      <identifier>testimonial</identifier>
+      <content><![CDATA[<div class="testimonials">	
+	<div class="testimonial-slider">
+		<div class="item">
+			<img src="{{media url="wysiwyg/testimonial/client1.png"}}" alt="" />
+			<div class="item-inner">
+				<p class="client-des">Fusce lorem ante, condientum in massa, posuere bibendum. Maecenas euismod vulputate eu rhoncus. Pellentesque commodo posuere maximus. Phasellus pellentesque pellentesque.</p>
+				<p class="client-name"><strong>Anna Kendrick</strong> - Designer</p>
+			</div>
+		</div>
+	    <div class="item">
+			<img src="{{media url="wysiwyg/testimonial/client2.png"}}" alt="" />
+			<div class="item-inner">
+				<p class="client-des">Consectetur adipisicing elit, lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna. Sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				<p class="client-name"><strong>Abraham</strong> - Marketing</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="{{media url="wysiwyg/testimonial/client3.png"}}" alt="" />
+			<div class="item-inner">
+				<p class="client-des">Sed do eiusmod tempor incididunt ut labore et dolore magna, lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				<p class="client-name"><strong>Anna Kendrick</strong> - CEO</p>
+			</div>
+		</div>
+	</div>	
+	
+<script>
+	jQuery(document).ready(function($) {
+		var owl_testimonial = $(".testimonial-slider");
+		owl_testimonial.owlCarousel({
+			
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				992:{
+					items:1
+				},
+				1200:{
+					items:1
+				}
+			},
+
+			autoplay:false,
+			loop:true,
+			nav : true, // Show next and prev buttons
+			dots: false,
+			autoplaySpeed : 500,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:30,
+
+		});	  
+	});	
+</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Footer col 1</title>
+      <identifier>spotlight1</identifier>
+      <content><![CDATA[<div class="spotlight spotlight1 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<div class="block-title">
+		Our Services
+	</div>
+	<div class="block-cont">
+		<ul>
+			<li><a href="#">Delivery Information</a></li>
+			<li><a href="#">Returns</a></li>
+			<li><a href="#">Terms & Conditions</a></li>
+			<li><a href="#">Shipping & Refund</a></li>
+			<li><a href="#">Specials</a></li>
+		</ul>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Footer col 2</title>
+      <identifier>spotlight2</identifier>
+      <content><![CDATA[<div class="spotlight spotlight2 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+       <div class="block-title">
+		Extras
+	</div>
+	<div class="block-cont">
+		<ul>
+			<li><a href="{{store url="contact-us.html"}}">Contact us</a></li>
+			<li><a href="#">Returns</a></li>
+			<li><a href="#">Specials</a></li>
+			<li><a href="#">Brands</a></li>
+			<li><a href="#">Gift Voucher</a></li>
+		</ul>
+	</div>
+	
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Footer col 3</title>
+      <identifier>spotlight3</identifier>
+      <content><![CDATA[<div class="spotlight spotlight3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<div class="block-title">
+		My account
+	</div>
+	<div class="block-cont">
+		<ul>
+			<li><a href="{{store url="sales/order/history/"}}">My orders</a></li>
+			<li><a href="#">My credit slips</a></li>
+			<li><a href="{{store url="customer/address/new/"}}">My addresses</a></li>
+			<li><a href="#">My personal info</a></li>			
+		</ul>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Footer support</title>
+      <identifier>footer-support</identifier>
+      <content><![CDATA[<p>NEED HELP? CALL OUR AWARD-WINNING</p>
+<span>SUPPORT TEAM 24/7 AT (844) 555-8386</span>
+
+]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Footer col 4</title>
+      <identifier>spotlight4</identifier>
+      <content><![CDATA[<div class="spotlight spotlight4 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+<div class="inner">
+	<div class="block-title">
+		Contact us
+	</div>
+	<div class="block-cont">
+		<div class="contactus">
+			<p class="first"><i class="fa fa-map-marker"></i><span>Megnor Comp Pvt Limited,
+			Trade Centre, Udhana Darwaja</span></p>
+			<p><i class="fa fa-mobile"></i><span>(91)-261 3023333</span></p>
+			<p><i class="fa fa-envelope"></i><span>demo@furnicom.com</span></p>
+		</div>
+		<div class="payment">
+			<a href="#"><img src="{{media url="wysiwyg/payment/pay1.png"}}" alt="" /></a>
+                        <a href="#"><img src="{{media url="wysiwyg/payment/pay2.png"}}" alt="" /></a>
+                        <a href="#"><img src="{{media url="wysiwyg/payment/pay3.png"}}" alt="" /></a>
+                        <a href="#" class="pay4"><img src="{{media url="wysiwyg/payment/pay4.png"}}" alt="" /></a>
+                        <a href="#" class="pay5"><img src="{{media url="wysiwyg/payment/pay5.png"}}" alt="" /></a>
+                         <a href="#" class="pay5"><img src="{{media url="wysiwyg/payment/pay6.png"}}" alt="" /></a>
+		</div>
+	</div>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Footer apps</title>
+      <identifier>apps</identifier>
+      <content><![CDATA[<div class="apps">
+	<div class="footer-title">
+		Download Our App
+	</div>
+	<div class="app-cont">
+		<a href="#"><img src="{{media url="wysiwyg/payment/app1.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/payment/app2.png"}}" alt="" /></a>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Header Live chat</title>
+      <identifier>header-livechat</identifier>
+      <content><![CDATA[<div class="livechat">
+<a href="#"><img src="{{media url="wysiwyg/header-img/livechat.png"}}" alt="" /></a>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Header hotline</title>
+      <identifier>header-hotline</identifier>
+      <content><![CDATA[<div class="hotline">
+           <p>
+                Call our customer service at: <span>096-999-8386</span>
+          </p>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Header Free Shipping</title>
+      <identifier>header-shipping</identifier>
+      <content><![CDATA[<div class="shipping">
+	<i class="fa fa-truck"></i>
+	<div class="inner">
+		<p>Everyday Free Shipping</p>
+		& No Sales Tax
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Header Socials</title>
+      <identifier>header-socials</identifier>
+      <content><![CDATA[<div class="socials-wrap">	
+	<ul>		
+			<li class="li-social facebook-social">
+				<a title="Facebook" href="https://www.facebook.com/MagenTech" target="_blank">
+					<span class="fa fa-facebook icon-social"></span>					
+				</a>
+			</li>
+			<li class="li-social twitter-social">
+				<a title="Twitter" href="https://twitter.com/smartaddons" target="_blank">
+					<span class="fa fa-twitter icon-social"></span>					
+				</a>
+			</li>
+			<li class="li-social linkedin-social">
+				<a title="Linkedin" href="#" target="_blank">
+					<span class="fa fa-linkedin icon-social"></span>					
+				</a>
+			</li>
+			<li class="li-social google-social">
+				<a title="Google" href="#" target="_blank">
+					<span class="fa fa-google-plus icon-social"></span>					
+				</a>
+			</li>
+			<li class="li-social pinterest-social">
+				<a title="Pinterest" href="#" target="_blank">
+					<span class="fa fa-pinterest icon-social"></span>					
+				</a>
+			</li>				
+	</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Basic products popular</title>
+      <identifier>products-popular</identifier>
+      <content><![CDATA[{{block type="basicproducts/list" name="basicproducts.list.sidebar" template="sm/basicproducts/basic-product-list.phtml"
+	product_limitation="3"
+	basicproducts_title_text="<strong>Popular</strong> Products"
+	product_order_dir="ASC"
+	product_order_by="top_rating"
+	product_title_maxlength="50"
+	product_title_display="1"
+	product_price_display="1"
+	product_reviews_count="1"
+	product_addcart_display="0"
+	product_addwishlist_display="0"
+	product_addcompare_display="0"
+	product_readmore_display="0"
+	product_description_display="0"
+	imgcfg_width="90"
+	imgcfg_height="90"
+}}]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Pretex Deal custom </title>
+      <identifier>pretext-deal</identifier>
+      <content><![CDATA[<div class="pretext-inner">
+	<p>Mauris ut tincidunt nisi, id auctor libero. Etiam aliquet felis et consectetur faucibus. Praesent aliquam, lec tempus consequat,deserunt jowl prosciutto boudin.</p>
+	<div class="top-categories">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/cat1.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/cat2.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/cat3.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/cat4.png"}}" alt="" /></a>
+	</div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 1 - Banner 1</title>
+      <identifier>banner1-1</identifier>
+      <content><![CDATA[<div class="banner1-w">
+	<div class="banner banner1-1">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home1/banner1-1.jpg"}}" alt="" /></a>
+	</div>
+	<div class="banner banner1-2">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home1/banner1-2.jpg"}}" alt="" /></a>
+	</div>
+	<div class="banner banner1-3">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home1/banner1-3.jpg"}}" alt="" /></a>
+	</div>
+</div>
+]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 1 - banner infomation</title>
+      <identifier>banner-infos</identifier>
+      <content><![CDATA[<div class="banner-infos">
+	<div class="banner-info banner-info1">
+                <img src="{{media url="wysiwyg/home-page-image/icon1.png"}}" alt="" />
+		<div class="banner-cont">
+			<a data-hover="FREE SHIPPING" href="#">FREE SHIPPING</a>
+			<p>Vestibulum dolor purus porta</p>
+		</div>
+	</div>
+	<div class="banner-info banner-info2">
+               <div class="inner">
+               <img src="{{media url="wysiwyg/home-page-image/icon2.png"}}" alt="" />
+		<div class="banner-cont">
+			<a data-hover="MONEY BACK GUARANTEE" href="#">MONEY BACK GUARANTEE</a>
+			<p>Vestibulum dolor purus porta</p>
+		</div>
+               </div>
+	</div>
+	<div class="banner-info banner-info3">
+                <img src="{{media url="wysiwyg/home-page-image/icon3.png"}}" alt="" />
+		<div class="banner-cont">
+			<a data-hover="24 HOURS SUPPORT" href="#">24 HOURS SUPPORT</a>
+			<p>Vestibulum dolor purus porta</p>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 1 -  Hot categories</title>
+      <identifier>static-content</identifier>
+      <content><![CDATA[<div class="static-content-wrap">
+	<div class="static-content static-content1">
+		<div class="h-cont content1-1 h-margin">
+			<img src="{{media url="wysiwyg/home-page-image/home1/banner2-0.jpg"}}" alt="" />
+			<div class="inner">
+				<div class="title-home">
+					<h2>Dining room</h2>
+				</div>
+				<ul>
+					<li><a href="#">Large Coffee Tables</a></li>
+					<li><a href="#">Small Coffee Tables</a></li>
+					<li><a href="#">Coffee Table sets</a></li>
+					<li><a href="#">End Tables</a></li>
+					<li><a href="#">Console Tables</a></li>
+					<li><a href="#">Set Of Tables</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="h-cont content1-2">
+			<img src="{{media url="wysiwyg/home-page-image/home1/banner2-1.jpg"}}" alt="" />
+			
+			<div class="inner">
+				<div class="title-home">
+					<h2>Living room</h2>
+				</div>
+				<ul>
+					<li><a href="#">Coffee Table sets</a></li>
+					<li><a href="#">End Tables</a></li>
+					<li><a href="#">Console Tables</a></li>
+					<li><a href="#">Set Of Tables</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="static-content static-content2">
+		<div class="content2-1 h-margin">
+			<div class="title-home">
+				<div class="title-home">
+					<h2><strong>Hot</strong> Categories</h2>
+				</div>
+				<div class="desc">
+					Duis euismod eu nibh at pharetra. Vivamus placerat ac metus et placerat. Nulla molestie massa id est posuere, maximus hendrerit est rhoncus.
+				</div>
+				<a href="#" class="button btn-viewall">
+					View all categories
+				</a>
+			</div>
+		</div>
+		<div class="h-cont content2-2">
+            <img src="{{media url="wysiwyg/home-page-image/home1/banner2-2.jpg"}}" alt="" />
+            <div class="inner">
+				<div class="title-home">
+					<h2>Bed room</h2>
+				</div>
+				<ul>
+					<li><a href="#">Nightstands</a></li>
+					<li><a href="#">Beds</a></li>
+					<li><a href="#">Headboards</a></li>
+					<li><a href="#">Chests & Dressers</a></li>
+					<li><a href="#">Nightstands</a></li>
+					<li><a href="#">Bedroom Sets</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="static-content static-content3">
+		<div class="h-cont content3-1 h-margin">
+			<img src="{{media url="wysiwyg/home-page-image/home1/banner2-3.jpg"}}" alt="" />
+			<div class="inner">
+				<div class="title-home">
+					<h2>Reading room</h2>
+				</div>
+				<ul>
+					<li><a href="#">Small Coffee Tables</a></li>
+					<li><a href="#">Coffee Table sets</a></li>
+					<li><a href="#">End Tables</a></li>
+					<li><a href="#">Console Tables</a></li>
+					<li><a href="#">Set Of Tables</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="h-cont content3-2">
+			<img src="{{media url="wysiwyg/home-page-image/home1/banner2-4.jpg"}}" alt="" />
+			<div class="inner">
+				<div class="title-home">
+					<h2>Bathroom</h2>
+				</div>
+				<ul>
+					<li><a href="#">Bathroom Faucets</a></li>
+					<li><a href="#">Bathroom Mirrors</a></li>
+					<li><a href="#">Bathroom Sinks</a></li>
+					<li><a href="#">Bathroom Vanities</a></li>
+					<li><a href="#">Showers</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 1- brands tab</title>
+      <identifier>brands-tab</identifier>
+      <content><![CDATA[<div class="brands-tab">
+
+  <!-- Nav tabs -->
+  <ul class="nav-brand-tabs" role="tablist">
+<li class="brands-title">
+	<h2><strong>Featured</strong> Brands</h2>
+</li>
+    <li class="br1 active-fix active"><a href="#brand1" data-toggle="tab"><img src="{{media url="wysiwyg/brand/br1.jpg"}}" alt="" /></a></li>
+    <li class="br2"><a href="#brand2" data-toggle="tab"><img src="{{media url="wysiwyg/brand/br2.jpg"}}" alt="" /></a></li>
+    <li class="br3"><a href="#brand3" data-toggle="tab"><img src="{{media url="wysiwyg/brand/br3.jpg"}}" alt="" /></a></li>    
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="brand1"><img src="{{media url="wysiwyg/brand/brand1.jpg"}}" alt="" /></div>
+    <div class="tab-pane fade" id="brand2"><img src="{{media url="wysiwyg/brand/brand2.jpg"}}" alt="" /></div>
+    <div class="tab-pane fade" id="brand3"><img src="{{media url="wysiwyg/brand/brand3.jpg"}}" alt="" /></div>
+    <div class="tab-pane fade" id="brand4"><img src="{{media url="wysiwyg/brand/brand4.jpg"}}" alt="" /></div>
+    <div class="tab-pane fade" id="brand5"><img src="{{media url="wysiwyg/brand/brand5.jpg"}}" alt="" /></div>
+    <div class="tab-pane fade" id="brand6"><img src="{{media url="wysiwyg/brand/brand6.jpg"}}" alt="" /></div>
+  </div>
+  <!-- Nav tabs -->
+  <ul class="nav-brand-tabs">
+    <li class="br4"><a href="#brand4" data-toggle="tab"><img src="{{media url="wysiwyg/brand/br4.jpg"}}" alt="" /></a></li>
+    <li class="br5"><a href="#brand5" data-toggle="tab"><img src="{{media url="wysiwyg/brand/br5.jpg"}}" alt="" /></a></li>
+    <li class="br6"><a href="#brand6" data-toggle="tab"><img src="{{media url="wysiwyg/brand/br6.jpg"}}" alt="" /></a></li>
+  </ul>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 2 - Banner 1</title>
+      <identifier>banner2-1</identifier>
+      <content><![CDATA[<div class="banner1-w">
+	<div class="banner banner1-1">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home2/banner1-1.jpg"}}" alt="" /></a>
+	</div>
+	<div class="banner banner1-2">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home2/banner1-2.jpg"}}" alt="" /></a>
+	</div>
+	<div class="banner banner1-3">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home2/banner1-3.jpg"}}" alt="" /></a>
+	</div>
+</div>
+]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 2 - Banner 2</title>
+      <identifier>banner2-2</identifier>
+      <content><![CDATA[<div class="banner banner2">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home2/banner2.jpg"}}" alt="" /></a>
+	</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 2 - static categories</title>
+      <identifier>static-categories2</identifier>
+      <content><![CDATA[<div class="static-categories">
+	<div class="static-cate static-cate-1">
+		<a href="{{store url="living-room.html"}}">
+			<span>Living room</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-2">
+		<a href="{{store url="living-room.html"}}">
+			<span>Office</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-3">
+		<a href="{{store url="living-room.html"}}">
+			<span>Armchair</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-4">
+		<a href="{{store url="diningroom.html"}}">
+			<span>Dinning room</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-5">
+		<a href="{{store url="living-room.html"}}">
+			<span>Shelf</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-6">
+		<a href="{{store url="bedrooms.html"}}">
+			<span>Bedroom</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-7">
+		<a href="{{store url="shop.html"}}">
+			<span>Sofa</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-8">
+		<a href="{{store url="shop.html"}}">
+			<span>Wall decor</span>
+		</a>
+	</div>
+	<div class="static-cate static-cate-9">
+		<a href="{{store url="shop.html"}}">
+			<span>Nightstand</span>
+		</a>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 3 - custom slider images</title>
+      <identifier>custom-slider-img</identifier>
+      <content><![CDATA[<div class="wow pulse">
+<div class="custom-slider-img-w">	
+	<div class="custom-slider-img">
+		<div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/slider-home/home-v3/slide1.jpg"}}" alt="" /></a>
+		</div>
+	    <div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/slider-home/home-v3/slide2.jpg"}}" alt="" /></a>
+		</div>
+		<div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/slider-home/home-v3/slide3.jpg"}}" alt="" /></a>
+		</div>
+		<div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/slider-home/home-v3/slide4.jpg"}}" alt="" /></a>
+		</div>
+	</div>	
+	
+<script>
+	jQuery(document).ready(function($) {
+		var owl_testimonial = $(".custom-slider-img");
+		owl_testimonial.owlCarousel({
+			
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				992:{
+					items:2
+				},
+				1200:{
+					items:2
+				}
+			},
+
+			autoplay:true,
+			loop:true,
+			nav : true, // Show next and prev buttons
+			dots: true,
+			autoplaySpeed : 500,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+
+		});	  
+	});	
+</script>
+</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Pretex Deal custom - home 4</title>
+      <identifier>pretext-deal4</identifier>
+      <content><![CDATA[<div class="pretext-inner">
+	<p>Fusce lorem ante, condimentum in massa, posuere bibendum. Maecenas euismod vulputate eu rhoncus.</p>
+	<div class="top-categories">
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home4/cat1.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home4/cat2.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home4/cat3.png"}}" alt="" /></a>
+		<a href="#"><img src="{{media url="wysiwyg/home-page-image/home4/cat4.png"}}" alt="" /></a>
+	</div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 4 - banner 1</title>
+      <identifier>banner4-1</identifier>
+      <content><![CDATA[<div class="banner4-1">
+	<div class="banner banner41 col-lg-8 col-md-8 col-sm-8 col-xs-12 no-padding">
+                     <a href="#"><img src="{{media url="wysiwyg/home-page-image/home4/banner4-1.jpg"}}" alt="" /></a>
+	</div>
+	<div class="banner banner42 col-lg-4 col-md-4 col-sm-4 col-xs-12 no-padding">
+                     <a href="#"><img src="{{media url="wysiwyg/home-page-image/home4/banner4-2.jpg"}}" alt="" /></a>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - home 5 -  banner 1</title>
+      <identifier>banner5-1</identifier>
+      <content><![CDATA[<div class="banner5-1">
+	<div class="banner banner51 col-lg-4 col-md-4 no-padding">
+        <a href="#"><img src="{{media url="wysiwyg/home-page-image/home5/banner5-1.jpg"}}" alt="" /></a>
+	</div>
+	<div class="banner banner52 col-lg-8 col-md-8 no-padding">
+        <a href="#"><img src="{{media url="wysiwyg/home-page-image/home5/banner5-2.jpg"}}" alt="" /></a>
+	</div>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+    <cms_block>
+      <title>Furnicom - Custom Slider Brands</title>
+      <identifier>slider-brands</identifier>
+      <content><![CDATA[<div class="custom-slider-brands-w">
+	<div class="brands-title">
+		<h2>
+			<strong>Featured</strong>
+			Brands
+		</h2>
+	</div>
+	<div class="custom-slider-brands">
+		<div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/brand/v5/br1.jpg"}}" alt="" /></a>
+		</div>
+	    <div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/brand/v5/br2.jpg"}}" alt="" /></a>
+		</div>
+		<div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/brand/v5/br3.jpg"}}" alt="" /></a>
+		</div>
+		<div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/brand/v5/br4.jpg"}}" alt="" /></a>
+		</div>
+                <div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/brand/v5/br1.jpg"}}" alt="" /></a>
+		</div>
+                <div class="item">
+			<a href="#"><img src="{{media url="wysiwyg/brand/v5/br2.jpg"}}" alt="" /></a>
+		</div>
+	</div>	
+	
+<script>
+	jQuery(document).ready(function($) {
+		var owl_brands = $(".custom-slider-brands");
+		owl_brands.owlCarousel({
+			
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				768:{
+					items:3
+				},
+				992:{
+					items:4
+				},
+				1200:{
+					items:4
+				}
+			},
+
+			autoplay:false,
+			loop:true,
+			nav : true, // Show next and prev buttons
+			dots: false,
+			autoplaySpeed : 500,
+			navSpeed : 500,
+			dotsSpeed : 500,
+			autoplayHoverPause: true,
+			margin:0,
+
+		});	  
+	});	
+</script>
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_block>
+  </blocks>
+</root>

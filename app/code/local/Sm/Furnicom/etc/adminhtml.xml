@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+	<config>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<furnicom_cfg translate="title" module="furnicom">
+											<title>SM furnicom Section</title>
+											<sort_order>150</sort_order>
+										</furnicom_cfg>
+									</children>
+								</config>
+							</children>
+						</system>						
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<menu>
+			<furnicom translate="title" module="furnicom">
+				<title>SM Furnicom Setting</title>
+				<sort_order>100</sort_order>
+				<depends>
+					<module>Sm_Furnicom</module>
+				</depends>
+				<children>
+					<furnicom translate="title" module="furnicom">
+						<title>SM Furnicom Setting</title>
+						<action>adminhtml/system_config/edit/section/furnicom_cfg</action>
+						<sort_order>0</sort_order>
+					</furnicom>
+					
+					<basicproducts_cfg translate="title" module="furnicom">
+						<title>SM Basic Products</title>
+						<sort_order>1</sort_order>
+						<action>adminhtml/system_config/edit/section/basicproducts_cfg</action>
+					</basicproducts_cfg>	
+
+							
+					<cartpro translate="title" module="furnicom">
+						<title>SM Cart Pro</title>
+						<action>adminhtml/system_config/edit/section/cartpro_cfg</action>
+						<sort_order>3</sort_order>
+					</cartpro>					
+			
+
+					<megamenu translate="title">
+						<title>SM Mega Menu</title>
+						<children>
+							<menugroup translate="title" module="furnicom">
+								<title>Menu Manager</title>
+								<action>megamenu/adminhtml_menugroup/</action>
+								<sort_order>1</sort_order>
+							</menugroup>	
+							<menuitems translate="title" module="furnicom">
+								<title>Menu Items Manager</title>
+								<action>megamenu/adminhtml_menuitems/</action>
+								<sort_order>2</sort_order>
+							</menuitems>
+							<configurtion translate="title" module="furnicom">
+								<title>Configuration</title>
+								<action>adminhtml/system_config/edit/section/megamenu_cfg</action>
+								<sort_order>3</sort_order>
+							</configurtion>
+						</children>
+					</megamenu>
+					<imageslider_cfg translate="label" module="imageslider">
+						<title>SM Image Slider</title>
+						<action>adminhtml/system_config/edit/section/imageslider_cfg</action>
+						<sort_order>5</sort_order>
+					</imageslider_cfg>	
+					
+					<deal_cfg translate="title" module="furnicom">
+						<title>SM Deal</title>
+						<action>adminhtml/system_config/edit/section/deal_cfg</action>
+						<sort_order>4</sort_order>
+					</deal_cfg>	
+	
+					<quickview translate="title" module="furnicom">
+						<title>SM Quickview</title>
+						<action>adminhtml/system_config/edit/section/quickview</action>
+						<sort_order>7</sort_order>
+					</quickview>
+					
+					<sm_shopby translate="title" module="furnicom">
+						<title>SM Shopby</title>
+						<action>adminhtml/system_config/edit/section/sm_shopby</action>
+						<sort_order>8</sort_order>
+					</sm_shopby>
+					
+					<listingtabs_cfg translate="title" module="furnicom">
+						<title>SM Listing Tabs</title>
+						<action>adminhtml/system_config/edit/section/listingtabs_cfg</action>
+						<sort_order>9</sort_order>
+					</listingtabs_cfg>		
+					
+					<supercategories_cfg translate="title" module="furnicom">
+						<title>SM Super Categories</title>
+						<action>adminhtml/system_config/edit/section/supercategories_cfg</action>
+						<sort_order>11</sort_order>
+					</supercategories_cfg>	
+					
+					
+					
+				</children>
+			</furnicom>
+		</menu>		
+	</config>

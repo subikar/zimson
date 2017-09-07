@@ -1,0 +1,110 @@
+
+
+<?php
+/*------------------------------------------------------------------------
+ # SM Shop By - Version 1.0
+ # Copyright (c) 2014 YouTech Company. All Rights Reserved.
+ # @license - Copyrighted Commercial Software
+ # Author: YouTech Company
+ # Websites: http://www.magentech.com
+-------------------------------------------------------------------------*/?>
+
+<?php if ($this->canShowBlock()): ?>
+  <div class="block-title shop-by dektop-none">
+      <strong><span><?php echo $this->__('Shop by') ?></span>  <span id="shope-by-tigger" class="pull-right"> + </span></strong>
+  </div>
+    <div class="block-title best-seller dektop-none">
+      <strong><span><?php echo $this->__('Best Seller') ?></span>  <span id="shope-by-tigger-b" class="pull-right"> + </span></strong>
+  </div>
+
+    <?php if (!$this->getRequest()->isAjax()): ?>
+		<div id="layered-navigation">
+    <?php endif; ?>
+        <div class="block block-layered-nav"><!--mobile-none-->
+
+            <div class="block-title mobile-none">
+           
+                <strong><span><?php echo $this->__('Shop by') ?></span></strong>
+            </div>
+            <?php echo $this->getStateHtml() ?>
+			
+			<?php if ($this->getLayer()->getState()->getFilters()): ?>
+                <div class="actions"><a class="clear-fillter" href="<?php echo $this->getClearUrl() ?>"><?php echo $this->__('Clear All') ?></a></div>
+            <?php endif; ?>
+            <div class="block-content shope-by-cont mobile-none">
+                <?php if ($this->canShowOptions()): ?>
+                    <dl id="narrow-by-list">
+                        <?php $_filters = $this->getFilters() ?>
+						<?php $i=0;?>
+                        <?php foreach ($_filters as $key=>$_filter): ?>
+                            <?php if ($_filter->getItemsCount()): $i++;?>
+								<div class="filter-wrapp <?php echo $this->__($_filter->getName()) ?>">
+									<dt class="<?php echo $this->__($_filter->getName()) ?> plus-minus" data-key="<?php echo $key; ?>">
+                                    <span><?php echo $this->__($_filter->getName()) ?>
+                                        <i class="fa fa-plus pull-right fa-pl-right_<?php echo $key; ?>"></i>
+                                    </span></dt>
+									<dd class="scroll-<?php echo $i;?> panel block_<?php echo $key; ?>" <?php echo ($i == 1)?'style="display:block"':'';?>><?php echo $_filter->getHtml() ?></dd>
+								</div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </dl>
+                    <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+                <?php endif; ?>
+            </div>
+        </div>
+
+    <?php if (!$this->getRequest()->isAjax()): ?>
+		</div>	
+    <?php endif; ?>
+
+<?php endif; ?>
+<style>
+    .panel{display: none;}
+    .plus-minus{cursor: pointer;}
+</style>
+
+<script type="text/javascript">
+  jQuery(function(){
+     jQuery('.shop-by').click(function(){
+      var pmvalue = jQuery('#shope-by-tigger').html();
+      if(pmvalue == '+')
+      {
+          jQuery('.shope-by-cont').show('slow');
+          jQuery('#shope-by-tigger').html('-');
+      }
+      else
+      {
+          jQuery('.shope-by-cont').hide('slow');
+          jQuery('#shope-by-tigger').html('+');        
+      }  
+      //console.log(pmvalue);
+     });
+     jQuery('.best-seller').click(function(){
+      var pmvalue = jQuery('#shope-by-tigger-b').html();
+      if(pmvalue == '+')
+      {
+          jQuery('.best-sellers-content').show('slow');
+          jQuery('#shope-by-tigger-b').html('-');
+      }
+      else
+      {
+          jQuery('.best-sellers-content').hide('slow');
+          jQuery('#shope-by-tigger-b').html('+');        
+      }  
+      //console.log(pmvalue);
+     });     
+  });
+</script>
+<script>
+    jQuery('.plus-minus').click(function(){
+       var key= jQuery(this).data('key'); 
+       jQuery('.block_'+key).slideToggle();
+       jQuery('.fa-pl-right_'+key).toggleClass('fa-minus');
+
+        //console.log(jQuery(this).find('fa-plus'));
+    });
+
+jQuery(".fa-pl-right_2").removeClass("fa-plus").addClass("fa-minus");
+
+
+</script>

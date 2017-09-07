@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_page>
+      <title>Furnicom - Responsive Magento Furniture Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-demo-01</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="home-default homestyle1">
+<div class="wrap-content1">
+	<div class="wow fadeInUp">
+        <div class="row">           
+			<div class="slider-deal-w col-lg-9 col-md-9">
+			    {{block type="deal/list" name="deal.list.default1" template="sm/deal/slider-deal.phtml"}}
+			</div>
+			<div class="products-w col-lg-3 col-md-3">
+			    {{block type="cms/block" block_id="products-popular"}}
+			</div>
+            {{block type="cms/block" block_id="banner1-1"}}	
+        </div>
+    </div>		
+</div>	
+<div class="wrap-content2 full-wrapper">
+	<div class="container">
+		<div class="wow fadeInUp">
+			<div class="slider-basic-wrapper content-box">
+			{{block type="basicproducts/list" name="basicproducts.slider.home" template="sm/basicproducts/basic-slider-home.phtml"}}
+			</div>
+		</div>
+		<div class="wow fadeInUp">
+		   <div class="content-box hm">
+		      {{block type="cms/block" block_id="banner-infos"}}
+		   </div>
+		</div>
+		<div class="wow fadeInUp">
+			<div class="slider-basic-wrapper content-box">
+			{{block type="basicproducts/list" name="basicproducts.slider.home" template="sm/basicproducts/basic-slider-home.phtml"
+			basicproducts_title_text="<strong>Best</strong> Sellers"
+			product_order_by="best_sales"
+			}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wow fadeInUp">
+<div class="testimonial-wrap full-wrapper">
+	<div class="container">
+		{{block type="cms/block" block_id="testimonial"}}             
+	</div>
+</div>
+</div> 
+<div class="wow fadeInUp">
+         {{block type="cms/block" block_id="static-content"}}		
+</div>
+
+<div class="wrap-content3 full-wrapper">
+<div class="container">
+<div class="wow fadeInUp">		
+	<div class="latest-blog-wrap">
+		{{block type="blog/blog" name="latest_post" template="aw_blog/latest-post.phtml"}}	
+	</div>			
+</div>
+<div class="wow fadeInUp">	
+        {{block type="cms/block" block_id="brands-tab"}}
+</div>
+
+</div>
+</div>
+	
+</div>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[<reference name="full_top">
+	<block type="imageslider/list" name="imageslider.list.default2" template="sm/imageslider/default.phtml">
+			</block>
+</reference>]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Furnicom2 - Responsive Magento Furniture Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-demo-02</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="homestyle2">
+
+<div class="wow fadeInUp">
+	<div class="full-wrapper full-wrapper-image center">
+		<div class="full-content">
+			{{block type="cms/block" block_id="banner2-1"}}
+		</div>
+	</div>
+</div>
+<div class="wow fadeInUp">
+	<div class="content-box slider-basic-w">
+	{{block type="basicproducts/list" name="basicproducts.slider.home" template="sm/basicproducts/basic-slider-home2.phtml"
+	basicproducts_title_text="New Arrivals"
+	product_order_by="created_at"
+	nb_column1="1"
+        nb_column2="1"
+        nb_column3="1"
+        nb_column4="1"
+        nb_column5="1"
+	product_limitation="16"
+	nb_rows="8"
+	}}
+	</div>
+</div>
+
+<div class="wow fadeInUp">
+	<div class="list-basic-w full-wrapper">
+       <div class="container">
+	{{block type="basicproducts/list" name="basicproducts.list.sidebar" template="sm/basicproducts/basic-product-list.phtml"
+		product_limitation="6"
+		basicproducts_title_text="Best Sellers"
+		product_order_dir="ASC"
+		product_order_by="best_sales"
+		product_title_maxlength="50"
+		product_title_display="1"
+		product_price_display="1"
+		product_reviews_count="1"
+		product_addcart_display="0"
+		product_addwishlist_display="0"
+		product_addcompare_display="0"
+		product_readmore_display="0"
+		product_description_display="0"
+		imgcfg_width="100"
+		imgcfg_height="100"
+	}}
+	</div>
+       </div>
+</div>
+<div class="wow fadeInUp">
+	<div class="box-content listingtab-wrapper">
+		{{block type="listingtabs/list" name="listingtabs.list.default" template="sm/listingtabs/default_index2.phtml"}}
+	</div>
+</div>
+<div class="wow fadeInUp">
+    {{block type="cms/block" block_id="banner2-2"}}
+</div>
+<div class="wow fadeInUp">
+
+<div class="dailydeal-wrap">
+<div class="row">
+	<div class="col-lg-7 col-md-7 col-sm-12 col-sx-12">
+                {{block type="deal/list" name="deal.list.default2" template="sm/deal/slider-deal2.phtml"
+                       product_description_display="1"
+                }}
+	</div>
+	<div class="col-lg-5 col-md-5 col-sm-12 col-sx-12">
+                {{block type="cms/block" block_id="static-categories2"}}
+	</div>
+</div>
+</div>
+</div>
+
+<div class="wow fadeInUp">		
+	<div class="latest-blog-wrap">
+		{{block type="blog/blog" name="latest_post" template="aw_blog/latest-post2.phtml"}}	
+	</div>			
+</div>
+
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[<reference name="full_top">
+	<block type="imageslider/list" name="imageslider.list.default2" template="sm/imageslider/default.phtml">
+			</block>
+</reference>]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Furnicom 3 - Responsive Magento Furniture Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-demo-03</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="homestyle3">
+        <div class="wow bounceInUp ">
+		      {{block type="cms/block" block_id="banner-infos"}}
+	</div>
+      <div class="wow fadeInUp">
+        <div class="wrap-content1">   
+                  <div class="row">        
+			<div class="slider-deal-w col-lg-9 col-md-9">
+			    {{block type="deal/list" name="deal.list.default1" template="sm/deal/slider-deal.phtml"}}
+			</div>
+			<div class="products-w col-lg-3 col-md-3">
+			    {{block type="cms/block" block_id="products-popular"}}
+			</div>
+                   </div>
+        </div>
+    </div>	
+<div class="wow fadeInUp">
+	<div class="listingtab-wrapper">
+		{{block type="listingtabs/list" name="listingtabs.list.default" template="sm/listingtabs/default.phtml"
+                          filter_type="categories"
+                         product_category="202,203,281"
+                         category_preload="202"
+                        margin="30"
+                         nbi_column1="4"
+                         nbi_column2="3"
+                         nbi_column3="2"
+                         nbi_column4="1"
+                 }}
+	</div>
+</div>
+
+    <div class="wow bounceInDown">
+          {{block type="cms/block" block_id="banner1-1"}}	
+     </div>
+
+<div class="wow fadeInUp">
+	<div class="listingtab-wrapper2">
+		{{block type="listingtabs/list" name="listingtabs.list.default3" template="sm/listingtabs/default_index2.phtml"
+                         listingtabs_title_text="<strong>product</strong> categories"
+			filter_type="categories"
+			product_category="264,239,255,267"
+			category_preload="264"
+       
+		}}
+	</div>
+</div>
+<div class="wow fadeInLeft">
+<div class="testimonial-wrap full-wrapper">
+	<div class="container">
+		{{block type="cms/block" block_id="testimonial"}}             
+	</div>
+</div>
+</div>
+<div class="wow fadeInUp">
+<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			{{block type="basicproducts/list" name="basicproducts.list.default" template="sm/basicproducts/basic-list-home.phtml" 
+                        basicproducts_title_text="<strong>New</strong> Arrivals" 
+                        product_order_by="created_at"
+                        nb_column1="1"
+                        nb_column2="1"
+                        nb_column3="1"
+                        nb_column4="1"
+                        }}
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			{{block type="basicproducts/list" name="basicproducts.list.default" template="sm/basicproducts/basic-list-home.phtml" 
+                        basicproducts_title_text="<strong>Best</strong> Selling" 
+                        product_order_by="best_sales"
+                        nb_column1="1"
+                        nb_column2="1"
+                        nb_column3="1"
+                        nb_column4="1"
+                        }}
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 phl-last">
+			{{block type="basicproducts/list" name="basicproducts.list.default" template="sm/basicproducts/basic-list-home.phtml" 
+                        basicproducts_title_text="<strong>Hot</strong> Sale" 
+                        product_order_by="most_viewed"
+                        nb_column1="1"
+                        nb_column2="1"
+                        nb_column3="1"
+                        nb_column4="1"
+                        }}
+		</div>
+</div>
+</div>
+
+<div class="wrap-content3 full-wrapper">
+<div class="container">
+<div class="wow fadeInUp">		
+	<div class="latest-blog-wrap">
+		{{block type="blog/blog" name="latest_post" template="aw_blog/latest-post.phtml"}}	
+	</div>			
+</div>
+</div>
+</div>
+
+<div class="wow fadeInUp">	
+        {{block type="cms/block" block_id="brands-tab"}}
+</div>
+
+
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[<reference name="full_top">
+
+<block type="cms/block" name="custom-slider-img">
+	<action method="setBlockId"><block_id>custom-slider-img</block_id></action>
+</block>
+</reference>]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Furnicom 4 - Responsive Magento Furniture Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-demo-04</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="homestyle4">
+	<div class="row">
+        <div class="content-wrap1">
+			<div class="wow fadeInLeft">
+				<div class="slider-images-w col-lg-9 col-md-8">
+		    		{{block type="imageslider/list" name="imageslider.list.default4" template="sm/imageslider/default.phtml"}}
+				</div>					
+			</div>
+			<div class="wow fadeInRight">               
+				<div class="products-w col-lg-3 col-md-4">
+					{{block type="basicproducts/list" name="basicproducts.list.sidebar4" template="sm/basicproducts/basic-product-list.phtml"
+						product_limitation="4"
+						basicproducts_title_text="<strong>Popular</strong> Products"
+						product_order_dir="ASC"
+						product_order_by="top_rating"
+						product_title_maxlength="50"
+						product_title_display="1"
+						product_price_display="1"
+						product_reviews_count="1"
+						product_addcart_display="0"
+						product_addwishlist_display="0"
+						product_addcompare_display="0"
+						product_readmore_display="0"
+						product_description_display="0"
+						imgcfg_width="90"
+						imgcfg_height="90"
+					}}
+				</div>	
+	        </div>				
+		</div>
+    </div>
+
+    <div class="wow fadeInUp">
+	    <div class="content-wrap2"> 
+	    	<div class="row">  
+				<div class="products-w col-lg-3 col-md-4">
+				    {{block type="basicproducts/list" name="basicproducts.list.sidebar4" template="sm/basicproducts/basic-product-list.phtml"
+					product_limitation="3"
+					basicproducts_title_text="<strong>Sale</strong> Products"
+					product_order_dir="ASC"
+					product_order_by="best_sales"
+					product_title_maxlength="50"
+					product_title_display="1"
+					product_price_display="1"
+					product_reviews_count="1"
+					product_addcart_display="0"
+					product_addwishlist_display="0"
+					product_addcompare_display="0"
+					product_readmore_display="0"
+					product_description_display="0"
+					imgcfg_width="92"
+					imgcfg_height="92"
+				}}
+				</div>        
+				<div class="slider-deal-w">
+				    {{block type="deal/list" name="deal.list.default4" template="sm/deal/slider-deal-v4.phtml"}}
+				</div>
+			</div>
+	    </div>
+	</div>
+
+       <div class="wow pulse">
+       <div class="box-content">
+                  {{block type="cms/block" block_id="banner4-1"}}
+       </div>
+	</div>
+
+<div class="wow fadeInUp">
+<div class="box-content">
+        {{block type="supercategories/list" name="supercategories.list.default" template="sm/supercategories/default_home4.phtml"}}
+</div>
+</div>
+
+<div class="wow fadeInUp">
+<div class="box-content super-cate-2">
+    {{block type="supercategories/list" name="supercategories.list.default" template="sm/supercategories/default_home4.phtml"
+    	product_category="203"
+    }}
+</div>
+</div>
+
+<div class="wow fadeInDown">
+<div class="testimonial-wrap full-wrapper ">
+	<div class="container">
+		{{block type="cms/block" block_id="testimonial"}}             
+	</div>
+</div>
+</div>
+
+<div class="wow fadeInUp">
+	<div class="listingtab-wrapper">
+		{{block type="listingtabs/list" name="listingtabs.list.default.v4" template="sm/listingtabs/default_index4.phtml"
+                         listingtabs_title_text="<strong>Best</strong> sellers"
+			filter_type="categories"
+			product_category="264,239,255,267"
+			category_preload="264"
+                        margin="30"
+                        product_limitation="12"
+		}}
+	</div>
+</div>
+
+ <div class="wow fadeInUp">
+          {{block type="cms/block" block_id="banner-infos"}}	
+ </div>
+
+<div class="content-wrap3 full-wrapper">
+<div class="container">
+<div class="wow fadeInUp">		
+	<div class="latest-blog-wrap">
+		{{block type="blog/blog" name="latest_post" template="aw_blog/latest-post.phtml"}}	
+	</div>			
+</div>
+</div>
+</div>
+
+<div class="wow fadeInUp">	
+        {{block type="cms/block" block_id="brands-tab"}}
+</div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+    <cms_page>
+      <title>Furnicom 5 - Responsive Magento Furniture Theme</title>
+      <root_template>one_column</root_template>
+      <identifier>home-demo-05</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div class="homestyle5">
+          <div class="wow fadeInLeft">				
+		   {{block type="imageslider/list" name="imageslider.list.default5" template="sm/imageslider/default.phtml"}}			
+          </div>
+
+<div class="wow fadeInUp">
+<div class="content-wrap1">
+<div class="row">
+	<div class="col-product1 col-lg-3 col-md-3">
+		{{block type="basicproducts/list" name="basicproducts.list.sidebar4" template="sm/basicproducts/basic-product-list.phtml"
+			product_limitation="3"
+			basicproducts_title_text="<strong>Sale</strong> Products"
+			product_order_dir="ASC"
+			product_order_by="best_sales"
+			product_title_maxlength="50"
+			product_title_display="1"
+			product_price_display="1"
+			product_reviews_count="1"
+			product_addcart_display="0"
+			product_addwishlist_display="0"
+			product_addcompare_display="0"
+			product_readmore_display="0"
+			product_description_display="0"
+			imgcfg_width="92"
+			imgcfg_height="92"
+		}}
+	</div>
+	<div class="col-deal col-lg-6 col-md-6">
+		<div class="slider-deal-w">
+		    {{block type="deal/list" name="deal.list.default4" template="sm/deal/slider-deal-v5.phtml"}}
+		</div>
+	</div>
+	<div class="col-product2 col-lg-3 col-md-3">
+		{{block type="basicproducts/list" name="basicproducts.list.sidebar6" template="sm/basicproducts/basic-product-list.phtml"
+			product_limitation="3"
+			basicproducts_title_text="<strong>Popular</strong> Products"
+			product_order_dir="ASC"
+			product_order_by="top_rating"
+			product_title_maxlength="50"
+			product_title_display="1"
+			product_price_display="1"
+			product_reviews_count="1"
+			product_addcart_display="0"
+			product_addwishlist_display="0"
+			product_addcompare_display="0"
+			product_readmore_display="0"
+			product_description_display="0"
+			imgcfg_width="92"
+			imgcfg_height="92"
+		}}
+	</div>
+</div>
+</div>
+</div>
+
+<div class="wow pulse">
+       <div class="box-content">
+                  {{block type="cms/block" block_id="banner5-1"}}
+       </div>
+</div>
+
+<div class="wow fadeInUp">
+<div class="box-content super-cate1">
+    {{block type="supercategories/list" name="supercategories.list.default51" template="sm/supercategories/default_home5.phtml"
+    	product_category="203"
+        nbi_column1="3"
+       product_limitation="12"
+    }}
+</div>
+</div>
+
+<div class="wow fadeInUp">
+<div class="box-content super-cate2">
+    {{block type="supercategories/list" name="supercategories.list.default51" template="sm/supercategories/default_home5.phtml"
+    	product_category="202"
+        nbi_column1="3"
+       product_limitation="12"
+    }}
+</div>
+</div>
+
+
+<div class="wow fadeInUp">
+<div class="box-content super-cate3">
+    {{block type="supercategories/list" name="supercategories.list.default51" template="sm/supercategories/default_home5.phtml"
+    	product_category="281"
+        nbi_column1="3"
+       product_limitation="12"
+    }}
+</div>
+</div>
+
+<div class="wow fadeInDown">
+<div class="box-content">
+<div class="testimonial-wrap full-wrapper ">
+	<div class="container">
+		{{block type="cms/block" block_id="testimonial"}}             
+	</div>
+</div>
+</div>
+</div>
+
+<div class="wow fadeInUp">
+	<div class="listingtab-wrapper">
+		{{block type="listingtabs/list" name="listingtabs.list.default.v5" template="sm/listingtabs/default_index4.phtml"
+                         listingtabs_title_text="<strong>Top</strong> selling"
+			filter_type="categories"
+			product_category="264,239,255,267"
+			category_preload="264"
+                        margin="30"
+                        product_limitation="12"
+		}}
+	</div>
+</div>
+
+ <div class="wow fadeInUp">
+          {{block type="cms/block" block_id="banner-infos"}}	
+ </div>
+
+<div class="content-wrap3 full-wrapper">
+<div class="container">
+<div class="wow fadeInUp">		
+	<div class="latest-blog-wrap">
+		{{block type="blog/blog" name="latest_post" template="aw_blog/latest-post.phtml"}}	
+	</div>			
+</div>
+</div>
+</div>
+
+ <div class="wow fadeInUp">
+          {{block type="cms/block" block_id="slider-brands"}}	
+ </div>
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_page>
+  </pages>
+</root>
