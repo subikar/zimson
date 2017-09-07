@@ -1,0 +1,233 @@
+@font-face{font-family:'TWG_Icons';src:url("twg_icons-webfont.eot");src:url("twg_icons-webfont.eot?#iefix") format("embedded-opentype"),url("twg_icons-webfont.woff2") format("woff2"), url("twg_icons-webfont.woff") format("woff"), url("twg_icons-webfont.ttf") format("truetype"), url("twg_icons-webfont.svg#twg_icons") format("svg");}
+
+.phone-icon {
+    /*float: right;*/
+    margin: 0px 9px 0 15px;
+    font-size: 130%;
+    letter-spacing: 1px;
+    font-family: "Aspect","ProximaNova-Regular",sans-serif;
+    color: #fff;
+    transition: color 0.23s ease-in;
+    -webkit-transition: color 0.23s ease-in;
+    -moz-transition: color 0.23s ease-in;
+    -o-transition: color 0.23s ease-in;
+    line-height: 30px;
+}
+
+ 
+
+.phone-icon:before{
+    font-family: "TWG_Icons";
+    content: "F";
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    margin: 0px 0 0 -10px;
+    -webkit-font-smoothing: antialiased;
+    width: 28px;
+    text-indent: 5px;
+    font-weight: 100;
+    
+}
+@media (max-width: 768px){
+
+    .phone-icon{
+         margin: 5px 15px 0 15px;
+         color: #000;       
+    }
+    .phone-icon:before{
+         margin: 0px 135px 0px 0px;
+         color: #000;
+         right: 0px;
+         
+    }
+    .my-phone{
+        text-align: right;
+    }
+}
+
+.account-icon:before {
+ /* font-family: "TWG_Icons";
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    font-size: 35px;
+    color: #000;
+    width: 25px;
+    content: "B";
+    padding-left: 50px; */
+
+}
+.header-style-2 .header .dropdown-block .dropdown-toggle > a:before {
+    font-family: "TWG_Icons";
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    margin: 0 0 0 -18px;
+    color: #fff;
+    width: 25px;
+    content: "B";
+    /* padding-left: 50px; */
+
+}
+@media (max-width: 768px){
+    .header-style-2 .header .dropdown-block .dropdown-toggle > a:before{
+      /* margin: 0 0 -5px -15px;*/
+       color: black;
+    top: 3px;
+    position: absolute; 
+    }
+
+}
+.account-cart-icon:before {
+   /* font-family: "TWG_Icons";
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    font-size: 35px;
+    margin: -20px 0 0 48px;
+    color: white;
+    width: 25px;
+    content: "C"; */
+}
+.header-style-2 .header .minicart-header .sm-cartpro .cartpro-title .item-info p:before{
+    font-family: "TWG_Icons";
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    margin:  0px;
+    color: white;
+    width: 25px;
+    content: "C";
+}
+@media (max-width: 768px){
+    .header-right-inner .minicart-header .sm-cartpro .cartpro-title .item-info p{
+        color: #000!important;
+    }
+   .header-right-inner .minicart-header .sm-cartpro .cartpro-title .item-info p:before{
+        color: #000!important;
+    }
+}
+
+.item-info{/*display: none;*/}
+
+
+.search-icon:after {
+    font-family: "TWG_Icons";
+    content: "D";
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    margin: 2px 0 0 80px;
+    background: none !important;
+    color: #f5f5f5;
+    width: 30px;
+    height: 30px;
+}
+
+.search-on-top{
+
+}
+.socials-wrap{
+    margin-top: 50px;
+}
+.socials-wrap ul li {
+    display: inline-block;
+}
+.socials-wrap ul li a {
+    border: 2px solid #9d0502;
+    border-radius: 100%;
+    color: #9d0502;
+    display: inline-block;
+    font-size: 138.46%;
+    height: 50px;
+   margin: 0 15px;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    width: 50px;
+    padding-top:18px;
+}
+.socials-wrap ul li a i.fa {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.socials-wrap ul li a::before {
+    color: #898989;
+    left: 0;
+    position: absolute;
+    width: 70px;
+    z-index: 9999;
+}
+.socials-wrap ul li a.icon-facebook {
+   /* border-color: #507dc0;
+    color: #507dc0;*/
+    border-color: #3b5998;
+    color: #3b5998;
+}
+.socials-wrap ul li a.icon-facebook::before {
+    color: #3b5998;
+}
+.socials-wrap ul li a.icon-twitter {
+    border-color: #00acee;
+    color: #00acee;
+}
+.socials-wrap ul li a.icon-twitter::before {
+    color: #00acee;
+}
+.socials-wrap ul li a.icon-pinterest {
+    border-color: #ef6160;
+    color: #ef6160;
+}
+.socials-wrap ul li a.icon-pinterest::before {
+    color: #ef6160;
+}
+.socials-wrap ul li a.likedin_ic{
+     border-color: #3078f0;
+    color: #3078f0;
+}
+.socials-wrap ul li a::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: 3px;
+    content: "";
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    transition: all 0.45s ease-in-out 0s;
+}
+.socials-wrap ul li a span {
+    color: #898989;
+    display: block;
+    font-family: arial;
+    font-size: 54.1%;
+    font-weight: bold;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-top:35px;
+}
+/*.socials-wrap ul li a:hover {
+    border-color: #f26522;
+    color: #f26522;
+}*/
+.socials-wrap ul li a:hover::before {
+    color: #f26522;
+}
+.socials-wrap ul li a:hover::after {
+    transform: rotate(135deg);
+}
+.socials-wrap ul li a:hover span {
+    color: #f26522;
+}
+.socials-wrap.social-slidebar-wrap h3.mod-social-title {
+    text-align: left;
+}
+.sm_megamenu_content ul li a:hover{
+    color: #B80F0A!important;
+}
+

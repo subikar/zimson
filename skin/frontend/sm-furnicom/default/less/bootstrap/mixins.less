@@ -1,0 +1,168 @@
+.transform_scale(@scale:1){
+  transform:scale(@scale);
+  -moz-transform:scale(@scale);
+  -webkit-transform:scale(@scale);
+  -ms-transform:scale(@scale);
+}
+
+.transition(@transition:.3s){
+  transition:@transition;
+  -moz-transition:@transition;
+  -webkit-transition:@transition;
+}
+
+.transform_origin(@var1:top,@var2:center){
+  transform-origin: @var1 @var2;
+  -moz-transform-origin: @var1 @var2;
+  -webkit-transform-origin: @var1 @var2;
+  -ms-transform-origin: @var1 @var2;
+}
+
+
+// Border Radius
+.border-radius(@radius:3px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Single Corner Border Radius
+.border-top-left-radius(@radius) {
+  -webkit-border-top-left-radius: @radius;
+      -moz-border-radius-topleft: @radius;
+          border-top-left-radius: @radius;
+}
+.border-top-right-radius(@radius) {
+  -webkit-border-top-right-radius: @radius;
+      -moz-border-radius-topright: @radius;
+          border-top-right-radius: @radius;
+}
+.border-bottom-right-radius(@radius) {
+  -webkit-border-bottom-right-radius: @radius;
+      -moz-border-radius-bottomright: @radius;
+          border-bottom-right-radius: @radius;
+}
+.border-bottom-left-radius(@radius) {
+  -webkit-border-bottom-left-radius: @radius;
+      -moz-border-radius-bottomleft: @radius;
+          border-bottom-left-radius: @radius;
+}
+
+// Single Side Border Radius
+.border-top-radius(@radius) {
+  .border-top-right-radius(@radius);
+  .border-top-left-radius(@radius);
+}
+.border-right-radius(@radius) {
+  .border-top-right-radius(@radius);
+  .border-bottom-right-radius(@radius);
+}
+.border-bottom-radius(@radius) {
+  .border-bottom-right-radius(@radius);
+  .border-bottom-left-radius(@radius);
+}
+.border-left-radius(@radius) {
+  .border-top-left-radius(@radius);
+  .border-bottom-left-radius(@radius);
+}
+
+
+.font-awesome (@code, @size){
+  content: '\@{code}';
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-synthesis: weight style;
+  font-stretch:normal;
+  font-size-adjust:none;
+  font-language-override:normal;
+  font-kerning: auto;
+  font-feature-settings:normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: @size;
+}
+
+
+.transition-delay (@time) {
+   -webkit-transition-delay: @time;
+  -moz-transition-delay: @time;
+  -o-transition-delay: @time;
+  transition-delay: @time;
+}
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+.opacity(@var){
+   -webkit-opacity: @var;
+   -moz-opacity: @var;
+  -ms-opacity:@var;
+   -o-opacity: @var;
+  opacity:@var;
+}
+.transition(@transition) {
+  -webkit-transition: @transition;
+   -moz-transition: @transition;
+  -ms-transition: @transition;
+   -o-transition: @transition;
+  transition:@transition;
+
+}
+.transform-origin(@origin){
+  -webkit-transform-origin: @origin;
+     -moz-transform-origin: @origin;
+       -o-transform-origin: @origin;
+          transform-origin: @origin;
+}
+.transform(@transform) {
+  -webkit-transform: @transform;
+     -moz-transform: @transform;
+       -o-transform: @transform; 
+          transform: @transform;
+}
+.border-arrow-top (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 @width/2 @height @width/2;
+  border-color: transparent transparent @color transparent;
+}
+.border-arrow-bottom (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @height @width/2 0 @width/2;
+  border-color: @color transparent transparent transparent;
+}
+.border-arrow-right (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @height/2 0 @height/2 @width;
+  border-color: transparent transparent transparent @color;
+}
+.border-arrow-left (@width, @height, @color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @height/2 @width @height/2 0;
+  border-color: transparent @color transparent transparent;
+}
+.square(@size){
+  width:@size;
+  height:@size;
+}
+
+
+/***/
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}

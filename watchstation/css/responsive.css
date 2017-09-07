@@ -1,0 +1,143 @@
+@media (max-width: 991px) {
+  /*===       START   --->  "Default" CSS     ====*/
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: auto !important;
+    overflow-x: hidden;
+    color: #8d8d8d;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
+  h1 {
+    font-size: 35px;
+    line-height: 47px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  /*===       END   --->  "Default" CSS     ====*/
+  /*===       START  --->  "Header" CSS       ===*/
+  .header_body_left img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header_body_left .header_title h1,
+  .header_body_left .header_title h2 {
+    text-align: center;
+  }
+  .header_body_left .detail p {
+    text-align: center;
+    margin: auto;
+  }
+  .subscribe .btn-group .btn {
+    float: none ;
+  }
+  .subscription {
+    margin: auto;
+    float: none;
+  }
+  .btn-standard {
+    min-width: 150px;
+  }
+  /*===       END   --->  "Header" CSS        ====*/
+  /*===       START  --->  "Newsletter" CSS       ====*/
+  .news_letter {
+    background-position: 0 !important;
+  }
+  .btn-standard {
+    min-width: 150px;
+  }
+  .btn-main {
+    font-weight: 300;
+  }
+  .news_letter_body {
+    width: 83%;
+  }
+  /*===   END   --->  "Newsletter" CSS     ====*/
+  /*===       START   --->  "collapse" CSS        ====*/
+  .collapse_right {
+    margin-top: 80px;
+  }
+  /*===       END   --->  "collapse" CSS        ====*/
+  /*===       START  --->  "Contact" CSS       ====*/
+  .contact_body_right {
+    margin-top: 40px;
+  }
+  /*===   END   --->  "Contact" CSS     ====*/
+  /*===       START   --->  "TAB AREA" CSS        ====*/
+  .slider .item {
+    display: inline-block;
+    margin: auto;
+    -webkit-flex-direction: row;
+    /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  /*===       END   --->  "TAB AREA" CSS        ====*/
+  /*===       START  --->  "Footer" CSS       ====*/
+  .social_icon ul li a {
+    margin: 0 5px;
+  }
+  /*===       END  --->  "Footer" CSS       ====*/
+}
+@media (max-width: 767px) {
+  /*===       START  --->  "header" CSS       ====*/
+  .btn-standard {
+    min-width: 90px !important;
+  }
+  /*===   END   --->  "header" CSS     ====*/
+  /*===       START  --->  "Newsletter" CSS       ====*/
+  .btn-standard {
+    min-width: 87px;
+  }
+  /*===   END   --->  "Newsletter" CSS     ====*/
+  /*===       START  --->  "Contact" CSS       ====*/
+  /*  Contact Form Area CSS */
+  /*===       END  --->  "header" CSS       ====*/
+  /*===       START   --->  "TAB AREA" CSS        ====*/
+  .tab-body ul {
+    padding-right: 0px;
+  }
+  .tab-body ul li {
+    width: 25% !important;
+  }
+  .tab-body ul li a {
+    padding: 25px 20px !important;
+  }
+  .tab-body ul .active {
+    width: 50% !important;
+  }
+  .tab-body ul .active a span {
+    display: none !important;
+  }
+  .tab-body ul .active a .fa {
+    float: none !important;
+  }
+  .slider .item {
+    display: inline-block;
+    margin: auto;
+    -webkit-flex-direction: row;
+    /* works with row or column */
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  /*===       END   --->  "TAB AREA" CSS        ====*/
+}

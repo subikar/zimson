@@ -1,0 +1,167 @@
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+  .menu-larger{
+    display: none;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  .menu-under.menu-on-top{
+    display: none;
+  }
+  #cpanel_wrapper #cpanel_btn{
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .header-style-5{
+    .header-top{
+      .header-topright{
+        display: none;
+      }
+    }
+    .socials-header{
+      display: none;
+    }
+    .header-middle .livechat{
+      display: none;
+    }
+    .header-top{
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: none;
+      .inner{
+        padding-right: 15px;
+      }
+    }
+    .btn-mobile-wrapper{
+      z-index: 1;
+      width: 62px;
+      height: 44px;
+      line-height: 44px;
+      background-color: #fff;
+      .btn-menu-mobile::before{
+        color: @color_theme;
+        font-size: 21px;
+      }
+    }
+    .header-middle .logo-wrapper{
+      margin-top: -5px;
+    }
+
+  } 
+
+}
+
+@media (max-width: 767px) {
+  .header-style-5{
+    .header-top{
+      .header-topright{
+        display: none;
+      }
+    }
+    .header-bottom .yt-menu .socials-header,
+    .header-middle .header-middleright .shipping,
+    .header-top .header-topright,
+    .dropdown-block.block-base,
+    .dropdown-block.block-myacount{
+      display: none;
+    }
+    .mobile-menu{
+      background-color: #eee;
+    }
+    .btn-mobile-wrapper{
+      width: 62px;
+      height: 55px;
+      line-height: 55px;
+      background-color: #fff;
+      .btn-menu-mobile::before{
+        color: @color_theme;
+      }
+    }
+    .header-top{
+      background-color: #eee;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: none;
+      padding-left: 15px;
+      .dropdown-block.block-login{
+        line-height: 55px;
+      }
+      .header-topleft{
+        .dropdown-block .dropdown-toggle{
+          line-height: 55px;
+        }
+
+      }
+    }
+
+    .header-middle .livechat{
+      display: none;
+    }
+    .header-middle{
+      position: relative;
+      .col-xs-12{
+        position: inherit;
+      }
+      #search_mini_form{
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-right: 0;
+        .form-search .input-text{
+          width: 100%;
+        }
+      }
+      .minicart-header{
+        position: absolute;
+        right: 5px;
+        top: 25px;
+      }
+      .logo-wrapper{
+        text-align: left;
+        //margin-top: 0;
+        padding-bottom: 30px;
+      }
+    }
+
+    .header-bottom{
+      display: none;
+    }
+
+
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) { 
+  .login-moile{
+    display: block;
+  }
+  .login-popup{
+    display: none;
+  }
+  .sm-cartpro .cartpro-content{
+    width: 300px;
+    padding: 15px 10px;
+    .button{
+      padding: 0 15px;
+    }
+  }
+}

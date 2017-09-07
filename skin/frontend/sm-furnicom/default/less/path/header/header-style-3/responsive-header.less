@@ -1,0 +1,217 @@
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-style-3{
+    /*--button cart--*/
+    .sm_megamenu_wrapper_horizontal_menu {
+        .products-grid .item .item-inner .bottom-action .btn-action{
+          &.link-compare,
+          &.link-wishlist{
+            width: 46px;
+          }
+        }
+    
+    }
+
+    .header-top .header-topright .inner .livechat{
+      margin-right: 20px;
+    }
+  }
+  
+    
+}
+@media (max-width: 991px) {
+  .menu-larger{
+    display: none;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  .menu-under.menu-on-top{
+    display: none;
+  }
+  #cpanel_wrapper #cpanel_btn{
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-style-3{
+    .header-top .header-topright{
+      display: none;
+    }
+    .header-middle .header-middleleft #search_mini_form{
+      width: 54%;
+    }
+    #search_mini_form .form-search .button-search{
+      padding: 0 10px;
+    }
+    #search_mini_form .form-search .input-text{
+      width: 230px;
+    }
+
+    .header-top{
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: none;
+      .inner{
+        padding-right: 15px;
+      }
+    }
+    .header-bottom .yt-menu .socials-header{
+      display: none;
+    }
+    .btn-mobile-wrapper{
+      z-index: 1;
+      width: 62px;
+      height: 44px;
+      line-height: 44px;
+      background-color: #fff;
+      .btn-menu-mobile::before{
+        color: @color_theme;
+        font-size: 21px;
+      }
+    }    
+
+  }
+   
+}
+
+@media (max-width: 767px) {
+  .header-style-3{
+    .header-top{
+      .header-topright{
+        display: none;
+      }
+    }
+    .header-bottom .yt-menu .socials-header,
+    .header-middle .header-middleright .shipping,
+    .header-top .header-topright,
+    .dropdown-block.block-base,
+    .dropdown-block.block-myacount{
+      display: none;
+    }
+    .btn-mobile-wrapper{
+      width: 62px;
+      height: 55px;
+      line-height: 55px;
+      background-color: #fff;
+      .btn-menu-mobile::before{
+        color: @color_theme;
+      }
+    }
+    .header-top{
+      background-color: #eee;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: none;
+      padding-left: 15px;
+      .dropdown-block.block-login{
+        line-height: 55px;
+      }
+      .header-topleft{
+        .dropdown-block .dropdown-toggle{
+          line-height: 55px;
+        }
+
+      }
+    }
+
+    .header-middle{
+      position: relative;
+      .header-middleleft{
+        margin: 0;
+        padding: 0;
+        position: inherit;
+        .logo-wrapper{
+          background-color: #fff;
+          height: 104px;
+          width: 100%;
+          margin-right: 0;
+          padding-top: 28px;
+        }
+      }
+      .header-middleright{
+        position: inherit;
+        .minicart-header{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        .minicart-header .sm-cartpro .cartpro-title{
+          width: 115px;
+        }
+      }
+    } 
+
+    .header-bottom{
+      background-color: transparent;
+    }
+
+    #search_mini_form {
+      float: left;
+      width: 100% !important;
+      margin: 30px 0;
+      padding: 0 15px;
+      .form-search{
+        width: 100%;
+        position: relative;
+        border: none;
+        box-shadow: none;
+          .button-search{
+            text-indent: -999em;
+            width: 50px;
+            height: 50px;
+            background-color: @color_theme;
+            position: absolute;
+            top: 0;
+            right: 0;
+            &:before{
+              content:"";
+              .font-awesome(f002, 16px);
+              position: absolute;
+              top: 15px;
+              left: 16px;
+              color: #fff;
+              text-indent: 0;
+            }
+            &:hover{
+              background-color: @color_theme_active;
+            }
+          }
+          .input-text{
+            height: 50px;
+            margin: 0;
+            border-left: none !important;
+          }
+      }
+    }
+
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+  .login-moile{
+    display: block;
+  }
+  .login-popup{
+    display: none;
+  }
+
+  .sm-cartpro .cartpro-content{
+    width: 300px;
+    padding: 15px 10px;
+    .button{
+        padding: 0 15px;
+      }
+  }
+}
